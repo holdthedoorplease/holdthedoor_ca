@@ -7,7 +7,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <link href="../_static/favicon-32x32.png" sizes="32x32" rel="icon" type="image/png">
+    <link href="../_static/favicon-16x16.png" sizes="16x16" rel="icon" type="image/png">
+    <link rel="shortcut icon" sizes="any" href="../_static/favicon.ico" type="image/x-icon">
+    <link href="../_static/android-chrome-192x192.png" sizes="192x192" rel="icon" type="image/png">
+    <link rel="mask-icon" color="#459db9" href="../_static/safari-pinned-tab.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../_static/apple-touch-icon.png" sizes="180x180" type="image/png">
+    <meta name="msapplication-TileColor" content="#459db9">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-TileImage" content="mstile-150x150.png">
     <title>Light and dark themes &#8212; pydata 0.1 documentation</title>
   
   
@@ -31,6 +39,8 @@
 <link href="../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=b83be735" />
   
   <!-- So that users can add custom icons -->
@@ -42,6 +52,13 @@
     <script src="../_static/documentation_options.js?v=e1a75a79"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'user_guide/light-dark';</script>
     <script src="../_static/pydata-icon.js?v=f63c87bd"></script>
     <script src="../_static/custom-icon.js?v=74687d30"></script>
@@ -615,6 +632,32 @@ These are:</p>
 </ul>
 <p>For example, the following page content defines two images, each of which uses a different one of the classes above.
 Change the theme and a new image should be displayed.</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+rst</label><div class="sd-tab-content docutils">
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">image</span><span class="p">::</span> https://source.unsplash.com/200x200/daily?cute+cat
+    <span class="nc">:class:</span> only-dark
+
+<span class="p">..</span> <span class="ow">image</span><span class="p">::</span> https://source.unsplash.com/200x200/daily?cute+dog
+    <span class="nc">:class:</span> only-light
+</pre></div>
+</div>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+markdown</label><div class="sd-tab-content docutils">
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>```{image} https://source.unsplash.com/200x200/daily?cute+cat
+:class: only-dark
+<span class="sb">```</span>
+
+<span class="sb">```{image} https://source.unsplash.com/200x200/daily?cute+dog</span>
+<span class="sb">:class: only-light</span>
+<span class="sb">```</span>
+</pre></div>
+</div>
+</div>
+</div>
 <img alt="https://source.unsplash.com/200x200/daily?cute+cat" class="only-dark" src="https://source.unsplash.com/200x200/daily?cute+cat" />
 <img alt="https://source.unsplash.com/200x200/daily?cute+dog" class="only-light" src="https://source.unsplash.com/200x200/daily?cute+dog" />
 </section>
@@ -629,8 +672,46 @@ dark themes, add the CSS class <code class="code docutils literal notranslate"><
 theme-agnostic.</p>
 <p>For example, here’s an image without adding this helper class.
 Change to the dark theme and a grey background will be present.</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-2" name="sd-tab-set-1" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+rst</label><div class="sd-tab-content docutils">
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">image</span><span class="p">::</span> https://source.unsplash.com/200x200/daily?cute+cat
+    <span class="nc">:class:</span> p-2
+</pre></div>
+</div>
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-3">
+markdown</label><div class="sd-tab-content docutils">
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>```{image} https://source.unsplash.com/200x200/daily?cute+cat
+:class: p-2
+```
+</pre></div>
+</div>
+</div>
+</div>
 <img alt="https://source.unsplash.com/200x200/daily?cute+cat" class="p-2" src="https://source.unsplash.com/200x200/daily?cute+cat" />
 <p>Here’s the same image with this class added:</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-4" name="sd-tab-set-2" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-4">
+rst</label><div class="sd-tab-content docutils">
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">image</span><span class="p">::</span> https://source.unsplash.com/200x200/daily?cute+cat
+    <span class="nc">:class:</span> dark-light
+</pre></div>
+</div>
+</div>
+<input id="sd-tab-item-5" name="sd-tab-set-2" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-5">
+markdown</label><div class="sd-tab-content docutils">
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>```{image} https://source.unsplash.com/200x200/daily?cute+cat
+:class: dark-light p-2
+```
+</pre></div>
+</div>
+</div>
+</div>
 <img alt="https://source.unsplash.com/200x200/daily?cute+cat" class="dark-light p-2" src="https://source.unsplash.com/200x200/daily?cute+cat" />
 </section>
 <section id="define-custom-javascript-to-react-to-theme-changes">
@@ -638,6 +719,49 @@ Change to the dark theme and a grey background will be present.</p>
 <p>You can define a JavaScript event hook that will run your code any time the theme changes.
 This is useful if you need to change elements of your page that cannot be defined by CSS rules.
 For example, to change an image source (e.g., logo) whenever the <code class="docutils literal notranslate"><span class="pre">data-theme</span></code> changes, a snippet like this can be used:</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-6" name="sd-tab-set-3" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-6">
+rst</label><div class="sd-tab-content docutils">
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">raw</span><span class="p">::</span> html
+
+    &lt;script type=&quot;text/javascript&quot;&gt;
+    var observer = new MutationObserver(function(mutations) {
+        const dark = document.documentElement.dataset.theme == &#39;dark&#39;;
+        document.getElementsByClassName(&#39;mainlogo&#39;)[0].src = dark ? &#39;_static/my_logo_dark.svg&#39; : &quot;_static/my_logo_light.svg&quot;;
+    })
+    observer.observe(document.documentElement, {attributes: true, attributeFilter: [&#39;data-theme&#39;]});
+    &lt;/script&gt;
+    &lt;link rel=&quot;preload&quot; href=&quot;_static/my_logo_dark.svg&quot; as=&quot;image&quot;&gt;
+
+<span class="p">..</span> <span class="ow">image</span><span class="p">::</span> _static/my_logo_light.svg
+    <span class="nc">:alt:</span> My Logo
+    <span class="nc">:class:</span> logo, mainlogo
+    <span class="nc">:align:</span> center
+</pre></div>
+</div>
+</div>
+<input id="sd-tab-item-7" name="sd-tab-set-3" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-7">
+markdown</label><div class="sd-tab-content docutils">
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>&lt;script type=&quot;text/javascript&quot;&gt;
+var observer = new MutationObserver(function(mutations) {
+    const dark = document.documentElement.dataset.theme == &#39;dark&#39;;
+    document.getElementsByClassName(&#39;mainlogo&#39;)[0].src = dark ? &#39;<span class="ge">_static/my_</span>logo_dark.svg&#39; : &quot;<span class="ge">_static/my_</span>logo_light.svg&quot;;
+})
+observer.observe(document.documentElement, {attributes: true, attributeFilter: [&#39;data-theme&#39;]});
+&lt;/script&gt;
+&lt;link rel=&quot;preload&quot; href=&quot;_static/my_logo_dark.svg&quot; as=&quot;image&quot;&gt;
+
+```{image} <span class="ge">_static/my_</span>logo_light.svg
+:alt: My Logo
+:class: logo, mainlogo
+:align: center
+```
+</pre></div>
+</div>
+</div>
+</div>
 <p>The JavaScript reacts to <code class="docutils literal notranslate"><span class="pre">data-theme</span></code> changes to alter <code class="docutils literal notranslate"><span class="pre">img</span></code>, and the <code class="docutils literal notranslate"><span class="pre">link</span></code> is used to preload the dark image.
 See the <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver">MutationObserver documentation</a> for more information.</p>
 </section>

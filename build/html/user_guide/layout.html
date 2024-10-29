@@ -7,7 +7,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <link href="../_static/favicon-32x32.png" sizes="32x32" rel="icon" type="image/png">
+    <link href="../_static/favicon-16x16.png" sizes="16x16" rel="icon" type="image/png">
+    <link rel="shortcut icon" sizes="any" href="../_static/favicon.ico" type="image/x-icon">
+    <link href="../_static/android-chrome-192x192.png" sizes="192x192" rel="icon" type="image/png">
+    <link rel="mask-icon" color="#459db9" href="../_static/safari-pinned-tab.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../_static/apple-touch-icon.png" sizes="180x180" type="image/png">
+    <meta name="msapplication-TileColor" content="#459db9">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-TileImage" content="mstile-150x150.png">
     <title>Theme Structure and Layout &#8212; pydata 0.1 documentation</title>
   
   
@@ -31,6 +39,8 @@
 <link href="../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=b83be735" />
   
   <!-- So that users can add custom icons -->
@@ -42,6 +52,13 @@
     <script src="../_static/documentation_options.js?v=e1a75a79"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'user_guide/layout';</script>
     <script src="../_static/pydata-icon.js?v=f63c87bd"></script>
     <script src="../_static/custom-icon.js?v=74687d30"></script>
@@ -562,7 +579,76 @@ For  complete reference of the existing option please see <a class="reference in
     display: flex;
     flex-direction: column;
 }
-</style><section id="horizontal-spacing">
+</style><div class="sd-container-fluid sd-sphinx-override sd-mb-4 sd-text-center docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-p-2 sd-border-1 docutils">
+<div class="sd-container-fluid sd-sphinx-override sd-m-0 docutils">
+<div class="sd-row docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-p-2 docutils">
+<p><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-outline-primary reference internal" href="#layout-header"><span class="std std-ref">Header / Navigation Bar</span></a></p>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-2 sd-col-xs-2 sd-col-sm-2 sd-col-md-2 sd-col-lg-2 sd-p-2 docutils">
+<p>Logo</p>
+<p><code class="docutils literal notranslate"><span class="pre">navbar_start</span></code></p>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 sd-p-2 docutils">
+<p>Section links</p>
+<p><code class="docutils literal notranslate"><span class="pre">navbar_center</span></code></p>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 sd-p-2 docutils">
+<p>Persistent components</p>
+<p><code class="docutils literal notranslate"><span class="pre">navbar_persistent</span></code></p>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-2 sd-col-xs-2 sd-col-sm-2 sd-col-md-2 sd-col-lg-2 sd-p-2 docutils">
+<p>Components</p>
+<p><code class="docutils literal notranslate"><span class="pre">navbar_end</span></code></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 sd-p-2 sd-border-1 primary-sidebar docutils">
+<p><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-outline-primary reference internal" href="#layout-sidebar-primary"><span class="std std-ref">Primary Sidebar</span></a></p>
+<p>Links between pages in the active section.</p>
+<p><code class="docutils literal notranslate"><span class="pre">sidebars</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">primary_sidebar_end</span></code></p>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
+<div class="sd-container-fluid sd-sphinx-override sd-m-0 docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-6 sd-col-xs-6 sd-col-sm-6 sd-col-md-6 sd-col-lg-6 sd-p-2 sd-border-1 content docutils">
+<p><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-outline-primary reference internal" href="#layout-article-header"><span class="std std-ref">Article Header</span></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">article_header_start</span></code>
+<code class="docutils literal notranslate"><span class="pre">article_header_end</span></code></p>
+<p><strong>Article Content</strong></p>
+<p><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-outline-primary reference internal" href="#layout-article-footer"><span class="std std-ref">Article Footer</span></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">article_footer_items</span></code>
+<code class="docutils literal notranslate"><span class="pre">prev_next_area</span></code></p>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-6 sd-col-xs-6 sd-col-sm-6 sd-col-md-6 sd-col-lg-6 sd-p-2 sd-border-1 sidebar-secondary docutils">
+<p><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-outline-primary reference internal" href="#layout-sidebar-secondary"><span class="std std-ref">Secondary Sidebar</span></a></p>
+<p>Within-page header links</p>
+<p><code class="docutils literal notranslate"><span class="pre">secondary_sidebar_items</span></code></p>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-m-0 sd-border-1 docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-p-2 footer-content docutils">
+<p><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-outline-primary reference internal" href="#layout-footer-content"><span class="std std-ref">Footer content</span></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">content_footer_items</span></code></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-p-2 sd-border-1 footer docutils">
+<p><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-outline-primary reference internal" href="#layout-footer"><span class="std std-ref">Footer</span></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">footer_start</span></code>
+<code class="docutils literal notranslate"><span class="pre">footer_center</span></code>
+<code class="docutils literal notranslate"><span class="pre">footer_end</span></code></p>
+</div>
+</div>
+</div>
+<section id="horizontal-spacing">
 <h3>Horizontal spacing<a class="headerlink" href="#horizontal-spacing" title="Link to this heading">#</a></h3>
 <p>By default, the theme’s three columns have fixed widths.
 The <code class="docutils literal notranslate"><span class="pre">primary</span> <span class="pre">sidebar</span></code> will snap to the left, the <code class="docutils literal notranslate"><span class="pre">secondary</span> <span class="pre">sidebar</span></code> will snap to the right, and the <code class="docutils literal notranslate"><span class="pre">article</span> <span class="pre">content</span></code> will be centered in between.</p>
@@ -831,11 +917,6 @@ If you’d like them to stack <strong>horizontally</strong> use a custom CSS rul
 <p>Below is a list of built-in templates that you can insert into any section.
 Note that some of them may have CSS rules that assume a specific section (and
 will be named accordingly).</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>When adding/changing/overwritting a component, the “.html” suffix is optional.
-That’s why all of them are displayed without it in the following list.</p>
-</div>
 </section>
 <section id="add-your-own-html-templates-to-theme-sections">
 <h2>Add your own HTML templates to theme sections<a class="headerlink" href="#add-your-own-html-templates-to-theme-sections" title="Link to this heading">#</a></h2>
@@ -882,7 +963,6 @@ following in it:</p>
 </section>
 <section id="references">
 <span id="id1"></span><h2>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
-<p>Please find here the full list of keys you can use in the <code class="docutils literal notranslate"><span class="pre">html_theme_options</span></code> in <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
 </section>
 </section>
 

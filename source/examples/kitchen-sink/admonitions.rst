@@ -87,12 +87,6 @@ Sphinx provides several different types of admonitions.
 
    25% if the service is good.
 
-``todo``
-========
-
-.. todo::
-
-   This needs the ``sphinx.ext.todo`` extension.
 
 ``warning``
 ===========

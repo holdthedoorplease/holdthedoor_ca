@@ -22,7 +22,6 @@ the following option.
 Below is an example of the inheritance diagram for ``matplotlib.figure.Figure``.
 Try toggling light/dark mode to see it adapt!
 
-.. inheritance-diagram:: matplotlib.figure.Figure
 
 See the sphinx inheritance-diagram `documentation`_ for more information.
 

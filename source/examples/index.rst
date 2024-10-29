@@ -16,7 +16,6 @@ See the sections in the primary sidebar and below to explore.
     :caption: Theme-specific styles
 
     kitchen-sink/index
-    pydata
     execution
     graphviz
 

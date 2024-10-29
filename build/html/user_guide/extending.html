@@ -7,7 +7,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <link href="../_static/favicon-32x32.png" sizes="32x32" rel="icon" type="image/png">
+    <link href="../_static/favicon-16x16.png" sizes="16x16" rel="icon" type="image/png">
+    <link rel="shortcut icon" sizes="any" href="../_static/favicon.ico" type="image/x-icon">
+    <link href="../_static/android-chrome-192x192.png" sizes="192x192" rel="icon" type="image/png">
+    <link rel="mask-icon" color="#459db9" href="../_static/safari-pinned-tab.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../_static/apple-touch-icon.png" sizes="180x180" type="image/png">
+    <meta name="msapplication-TileColor" content="#459db9">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-TileImage" content="mstile-150x150.png">
     <title>Extending the theme &#8212; pydata 0.1 documentation</title>
   
   
@@ -31,6 +39,8 @@
 <link href="../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=b83be735" />
   
   <!-- So that users can add custom icons -->
@@ -42,6 +52,13 @@
     <script src="../_static/documentation_options.js?v=e1a75a79"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'user_guide/extending';</script>
     <script src="../_static/pydata-icon.js?v=f63c87bd"></script>
     <script src="../_static/custom-icon.js?v=74687d30"></script>
@@ -561,6 +578,27 @@
 <p class="admonition-title">Note</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 </div>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+rst</label><div class="sd-tab-content docutils">
+<pre class="code rst highlight-rst literal-block"><code><span class="punctuation">..</span> <span class="operator word">note</span><span class="punctuation">::</span><span class="whitespace">
+</span>    <span class="name class">:class:</span> dropdown<span class="whitespace">
+
+</span>    Lorem ipsum dolor sit amet, consectetur adipiscing elit.</code></pre>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+markdown</label><div class="sd-tab-content docutils">
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>```{note}
+:class: dropdown
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+```
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="custom-admonition-styles">
 <h2>Custom admonition styles<a class="headerlink" href="#custom-admonition-styles" title="Link to this heading">#</a></h2>
@@ -573,15 +611,47 @@
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 </div>
 <p>The title is specified on the same line as the <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">admonition::</span></code> directive:</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-2" name="sd-tab-set-1" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+rst</label><div class="sd-tab-content docutils">
+<pre class="code rst highlight-rst literal-block"><code><span class="punctuation">..</span> <span class="operator word">admonition</span><span class="punctuation">::</span> Custom title!<span class="whitespace">
+
+</span>    Lorem ipsum dolor sit amet, consectetur adipiscing elit.</code></pre>
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-3">
+markdown</label><div class="sd-tab-content docutils">
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>```{admonition} Custom title!
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+```
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="styling-with-semantic-color-names">
 <h3>Styling with semantic color names<a class="headerlink" href="#styling-with-semantic-color-names" title="Link to this heading">#</a></h3>
-<p>You can re-style any admonition to match any of the built-in admonition types using any of the <a class="reference internal" href="styling.html#color-variables"><span class="std std-ref">theme’s semantic color names</span></a> as a class (this is most useful for custom-titled admonitions):</p>
-<div class="warning admonition">
-<p class="admonition-title">Custom title with “warning” style</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-</div>
 <p>Note that it updates both the color and the icon. See <a class="reference internal" href="styling.html"><span class="doc">Theme variables and CSS</span></a> for a list of all semantic color names.</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-4" name="sd-tab-set-2" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-4">
+rst</label><div class="sd-tab-content docutils">
+<pre class="code rst highlight-rst literal-block"><code>            <span class="name class">:end-before:</span></code></pre>
+</div>
+<input id="sd-tab-item-5" name="sd-tab-set-2" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-5">
+markdown</label><div class="sd-tab-content docutils">
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>```{admonition} Custom title with &quot;warning&quot; style
+:class: warning
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+```
+</pre></div>
+</div>
+</div>
+</div>
 <p>This theme defines classes for <a class="reference external" href="https://docutils.sourceforge.io/docs/ref/rst/directives.html#admonitions">the standard docutils admonition types</a> (<code class="docutils literal notranslate"><span class="pre">attention</span></code>, <code class="docutils literal notranslate"><span class="pre">caution</span></code>, etc) and additionally supports <code class="docutils literal notranslate"><span class="pre">seealso</span></code> and <code class="docutils literal notranslate"><span class="pre">todo</span></code> admonitions (see <a class="reference internal" href="../examples/kitchen-sink/admonitions.html"><span class="doc">Admonitions</span></a> for a demo of all built-in admonition styles).</p>
 </section>
 <section id="customizing-the-color">
@@ -593,6 +663,27 @@
 </div>
 <p>To do this, you will need to add a class to your <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_css_files">custom.css</a> file, as in the example below.
 Be sure to use the same color for <code class="docutils literal notranslate"><span class="pre">border-color</span></code> and <code class="docutils literal notranslate"><span class="pre">color</span></code> and a different shade for <code class="docutils literal notranslate"><span class="pre">background-color</span></code>:</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-6" name="sd-tab-set-3" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-6">
+rst</label><div class="sd-tab-content docutils">
+<pre class="code rst highlight-rst literal-block"><code><span class="punctuation">..</span> <span class="operator word">admonition</span><span class="punctuation">::</span> Admonition with custom &quot;olive&quot; color<span class="whitespace">
+</span>    <span class="name class">:class:</span> admonition-olive<span class="whitespace">
+
+</span>    Lorem ipsum dolor sit amet, consectetur adipiscing elit.</code></pre>
+</div>
+<input id="sd-tab-item-7" name="sd-tab-set-3" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-7">
+markdown</label><div class="sd-tab-content docutils">
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>```{admonition} Admonition with custom &quot;olive&quot; color
+:class: admonition-olive
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+```
+</pre></div>
+</div>
+</div>
+</div>
 <p>And add the following to your <code class="docutils literal notranslate"><span class="pre">custom.css</span></code> file:</p>
 <pre class="code css highlight-css literal-block"><code><span class="comment">/* &lt;your static path&gt;/custom.css */</span><span class="whitespace">
 
@@ -616,6 +707,27 @@ Be sure to use the same color for <code class="docutils literal notranslate"><sp
 <p class="admonition-title">Check out my custom icon</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 </div>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-8" name="sd-tab-set-4" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-8">
+rst</label><div class="sd-tab-content docutils">
+<pre class="code rst highlight-rst literal-block"><code><span class="punctuation">..</span> <span class="operator word">admonition</span><span class="punctuation">::</span> Check out my custom icon<span class="whitespace">
+</span>    <span class="name class">:class:</span> admonition-icon<span class="whitespace">
+
+</span>    Lorem ipsum dolor sit amet, consectetur adipiscing elit.</code></pre>
+</div>
+<input id="sd-tab-item-9" name="sd-tab-set-4" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-9">
+markdown</label><div class="sd-tab-content docutils">
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>```{admonition} Check out my custom icon
+:class: admonition-icon
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+```
+</pre></div>
+</div>
+</div>
+</div>
 <p>And add the following css to your <code class="docutils literal notranslate"><span class="pre">custom.css</span></code> file:</p>
 <pre class="code css highlight-css literal-block"><code><span class="comment">/* &lt;your static path&gt;/custom.css */</span><span class="whitespace">
 
@@ -628,6 +740,31 @@ Be sure to use the same color for <code class="docutils literal notranslate"><sp
 <p>Here we demonstrate an admonition with a custom icon, color, and title (and also make it collapsible). Note that the multiple admonition class names are space-separated:</p>
 <div class="dropdown admonition-youtube admonition">
 <p class="admonition-title">YouTube</p>
+<div class="video_wrapper" style="">
+<iframe allowfullscreen="true" src="https://www.youtube.com/embed/dQw4w9WgXcQ" style="border: 0; height: 345px; width: 560px">
+</iframe></div></div>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-10" name="sd-tab-set-5" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-10">
+rst</label><div class="sd-tab-content docutils">
+<pre class="code rst highlight-rst literal-block"><code><span class="punctuation">..</span> <span class="operator word">admonition</span><span class="punctuation">::</span> YouTube<span class="whitespace">
+</span>    <span class="name class">:class:</span> dropdown admonition-youtube<span class="whitespace">
+
+</span><span class="punctuation">    ..</span>  <span class="operator word">youtube</span><span class="punctuation">::</span> dQw4w9WgXcQ</code></pre>
+</div>
+<input id="sd-tab-item-11" name="sd-tab-set-5" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-11">
+markdown</label><div class="sd-tab-content docutils">
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>````{admonition} YouTube
+:class: dropdown admonition-youtube
+
+```{youtube} dQw4w9WgXcQ
+```
+
+````
+</pre></div>
+</div>
+</div>
 </div>
 <p>And add the following css to your custom.css file:</p>
 <pre class="code css highlight-css literal-block"><code><span class="comment">/* &lt;your static path&gt;/custom.css */</span><span class="whitespace">

@@ -135,18 +135,9 @@ They can be quoted without indentation::
 >
 > Why didn't I think of that?
 
-.. literalinclude:: ../../../src/pydata_sphinx_theme/__init__.py
-    :language: python
-    :caption: Literal includes can also have captions.
-    :linenos:
-    :lines: 10-20
-
 Doctest Blocks
 --------------
 
-https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#doctest-blocks
-
-    Doctest blocks are interactive Python sessions cut-and-pasted into docstrings. They are meant to illustrate usage by example, and provide an elegant and powerful testing environment via the doctest module in the Python standard library.
 
 .. note::
 

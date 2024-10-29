@@ -87,15 +87,6 @@ The title is specified on the same line as the ``.. admonition::`` directive:
 Styling with semantic color names
 ---------------------------------
 
-You can re-style any admonition to match any of the built-in admonition types using any of the :ref:`theme's semantic color names <color-variables>` as a class (this is most useful for custom-titled admonitions):
-
-.. begin-example-semantic
-.. admonition:: Custom title with "warning" style
-    :class: warning
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-.. end-example-semantic
-
 Note that it updates both the color and the icon. See :doc:`./styling` for a list of all semantic color names.
 
 .. tab-set::

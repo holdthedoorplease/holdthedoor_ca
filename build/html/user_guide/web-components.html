@@ -7,7 +7,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <link href="../_static/favicon-32x32.png" sizes="32x32" rel="icon" type="image/png">
+    <link href="../_static/favicon-16x16.png" sizes="16x16" rel="icon" type="image/png">
+    <link rel="shortcut icon" sizes="any" href="../_static/favicon.ico" type="image/x-icon">
+    <link href="../_static/android-chrome-192x192.png" sizes="192x192" rel="icon" type="image/png">
+    <link rel="mask-icon" color="#459db9" href="../_static/safari-pinned-tab.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../_static/apple-touch-icon.png" sizes="180x180" type="image/png">
+    <meta name="msapplication-TileColor" content="#459db9">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-TileImage" content="mstile-150x150.png">
     <title>Sphinx Design Components &#8212; pydata 0.1 documentation</title>
   
   
@@ -31,6 +39,8 @@
 <link href="../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=b83be735" />
   
   <!-- So that users can add custom icons -->
@@ -42,6 +52,13 @@
     <script src="../_static/documentation_options.js?v=e1a75a79"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'user_guide/web-components';</script>
     <script src="../_static/pydata-icon.js?v=f63c87bd"></script>
     <script src="../_static/custom-icon.js?v=74687d30"></script>
@@ -568,13 +585,44 @@ you see on your site even if your site uses this theme.</p>
 <section id="badges-and-button-links">
 <span id="badges-buttons"></span><h2>Badges and button-links<a class="headerlink" href="#badges-and-button-links" title="Link to this heading">#</a></h2>
 <p>Here are some of the available badges:</p>
-<p><a href="#id1"><span class="problematic" id="id2">:bdg-primary:`primary`</span></a>
-<a href="#id3"><span class="problematic" id="id4">:bdg-secondary:`secondary`</span></a>
-<a href="#id5"><span class="problematic" id="id6">:bdg-success:`success`</span></a>
-<a href="#id7"><span class="problematic" id="id8">:bdg-primary-line:`primary outline`</span></a>
-<a href="#id9"><span class="problematic" id="id10">:bdg-secondary-line:`secondary outline`</span></a>
-<a href="#id11"><span class="problematic" id="id12">:bdg-success-line:`success outline`</span></a></p>
+<p><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">primary</span>
+<span class="sd-sphinx-override sd-badge sd-bg-secondary sd-bg-text-secondary">secondary</span>
+<span class="sd-sphinx-override sd-badge sd-bg-success sd-bg-text-success">success</span>
+<span class="sd-sphinx-override sd-badge sd-outline-primary sd-text-primary">primary outline</span>
+<span class="sd-sphinx-override sd-badge sd-outline-secondary sd-text-secondary">secondary outline</span>
+<span class="sd-sphinx-override sd-badge sd-outline-success sd-text-success">success outline</span></p>
 <p>Here are some of the available button-style links, also using semantic colors:</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<p><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-info sd-shadow-sm reference internal" href="#badges-buttons"><span class="std std-ref">Info</span></a></p>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<p><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-success sd-shadow-sm reference internal" href="#badges-buttons"><span class="std std-ref">Success</span></a></p>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<p><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-warning sd-shadow-sm reference internal" href="#badges-buttons"><span class="std std-ref">Warning</span></a></p>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<p><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-danger sd-shadow-sm reference internal" href="#badges-buttons"><span class="std std-ref">Danger</span></a></p>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<p><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-muted sd-shadow-sm reference internal" href="#badges-buttons"><span class="std std-ref">Muted</span></a></p>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<p><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-light sd-shadow-sm reference internal" href="#badges-buttons"><span class="std std-ref">Light</span></a></p>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<p><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-dark sd-shadow-sm reference internal" href="#badges-buttons"><span class="std std-ref">Dark</span></a></p>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<p><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-secondary sd-shadow-sm reference internal" href="#badges-buttons"><span class="std std-ref">Secondary</span></a></p>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<p><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-primary sd-shadow-sm reference internal" href="#badges-buttons"><span class="std std-ref">Primary</span></a></p>
+</div>
+</div>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><a class="reference external" href="https://sphinx-design.readthedocs.io/en/latest/badges_buttons.html">Sphinx Design buttons</a>
@@ -587,9 +635,141 @@ native button components such as using the correct <a class="reference external"
 </section>
 <section id="cards">
 <h2>Cards<a class="headerlink" href="#cards" title="Link to this heading">#</a></h2>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Only heading</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Only body.</p>
+<p class="sd-card-text">But with multiple text paragraphs.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Heading and body</div>
+<p class="sd-card-text">Content of the third card.</p>
+<p class="sd-card-text"><span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">Sample badge</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+A card with a dropdown menu</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><span class="fa fa-eye me-1"></span> Click to expand dropdown</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Hidden content</p>
+</div>
+</details></div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+A clickable card</div>
+<p class="sd-card-text">Don’t forget to add the alternative text with <code class="docutils literal notranslate"><span class="pre">link-alt</span></code>!</p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://sphinx-design.readthedocs.io/en/pydata-theme/cards.html#clickable-cards"><span>Clickable cards - Sphinx Design docs</span></a></div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text">panel 1 header</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">panel 1 content
+more content</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">panel 1 footer</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text">panel 2 header</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">panel 2 content</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">panel 2 footer</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="tabs">
 <h2>Tabs<a class="headerlink" href="#tabs" title="Link to this heading">#</a></h2>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+c++</label><div class="sd-tab-content docutils">
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="n">argv</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+python</label><div class="sd-tab-content docutils">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="k">return</span>
+</pre></div>
+</div>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+java</label><div class="sd-tab-content docutils">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-3">
+julia</label><div class="sd-tab-content docutils">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="k">function</span><span class="w"> </span><span class="n">main</span><span class="p">()</span>
+<span class="k">end</span>
+</pre></div>
+</div>
+</div>
+<input id="sd-tab-item-4" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-4">
+fortran</label><div class="sd-tab-content docutils">
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="k">PROGRAM </span><span class="n">main</span>
+<span class="k">END PROGRAM </span><span class="n">main</span>
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="dropdowns">
 <h2>Dropdowns<a class="headerlink" href="#dropdowns" title="Link to this heading">#</a></h2>
@@ -599,7 +779,32 @@ See <a class="reference external" href="https://sphinx-design.readthedocs.io/en/
 <p class="admonition-title">An admonition for reference.</p>
 <p>And some admonition content.</p>
 </div>
-</section>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-kebab-horizontal no-title" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14a2 2 0 1 1-.001-3.999A2 2 0 0 1 20 14ZM6 12a2 2 0 1 1-3.999.001A2 2 0 0 1 6 12Zm8 0a2 2 0 1 1-3.999.001A2 2 0 0 1 14 12Z"></path></svg></span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">And with no title and some content!</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">With a title</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">And some content!</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-unlock" viewBox="0 0 16 16" aria-hidden="true"><path d="M5.5 4v2h7A1.5 1.5 0 0 1 14 7.5v6a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5v-6A1.5 1.5 0 0 1 3.499 6H4V4a4 4 0 0 1 7.371-2.154.75.75 0 0 1-1.264.808A2.5 2.5 0 0 0 5.5 4Zm-2 3.5v6h9v-6h-9Z"></path></svg></span><span class="sd-summary-text">With a title and icon</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">And some content and an icon!</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header sd-bg-primary sd-bg-text-primary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-unlock" viewBox="0 0 16 16" aria-hidden="true"><path d="M5.5 4v2h7A1.5 1.5 0 0 1 14 7.5v6a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5v-6A1.5 1.5 0 0 1 3.499 6H4V4a4 4 0 0 1 7.371-2.154.75.75 0 0 1-1.264.808A2.5 2.5 0 0 0 5.5 4Zm-2 3.5v6h9v-6h-9Z"></path></svg></span><span class="sd-summary-text">A primary color dropdown</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">And some content!</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header sd-bg-secondary sd-bg-text-secondary">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-unlock" viewBox="0 0 16 16" aria-hidden="true"><path d="M5.5 4v2h7A1.5 1.5 0 0 1 14 7.5v6a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5v-6A1.5 1.5 0 0 1 3.499 6H4V4a4 4 0 0 1 7.371-2.154.75.75 0 0 1-1.264.808A2.5 2.5 0 0 0 5.5 4Zm-2 3.5v6h9v-6h-9Z"></path></svg></span><span class="sd-summary-text">A secondary color dropdown</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">And some content!</p>
+</div>
+</details></section>
 <section id="copybuttons">
 <h2>Copybuttons<a class="headerlink" href="#copybuttons" title="Link to this heading">#</a></h2>
 <p><a class="reference external" href="https://sphinx-copybutton.readthedocs.io/en/latest/">sphinx-copybutton</a> adds a copy button to each of your code cells.
@@ -612,8 +817,8 @@ You can see it in action by hovering over the code cell below:</p>
 <p>If your documentation site uses both nbsphinx and Sphinx-copybutton, you
 will want to add the following line to your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file to prevent the
 copy button from appearing on top of notebook cell numbers:</p>
-<div class="literal-block-wrapper docutils container" id="id13">
-<div class="code-block-caption"><span class="caption-text">conf.py</span><a class="headerlink" href="#id13" title="Link to this code">#</a></div>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">conf.py</span><a class="headerlink" href="#id1" title="Link to this code">#</a></div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">copybutton_selector</span> <span class="o">=</span> <span class="s2">&quot;:not(.prompt) &gt; div.highlight pre&quot;</span>
 </pre></div>
 </div>
@@ -626,6 +831,9 @@ copy button from appearing on top of notebook cell numbers:</p>
 <div class="dropdown admonition">
 <p class="admonition-title">Click me to toggle!</p>
 <p>This will be hidden until a click!</p>
+</div>
+<div class="toggle docutils container">
+<p>A standalone toggle button!</p>
 </div>
 </section>
 </section>

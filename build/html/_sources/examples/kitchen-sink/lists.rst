@@ -199,11 +199,6 @@ Second list level
 
       heh heh. child. try to beat this embed:
 
-      .. literalinclude:: ../../../src/pydata_sphinx_theme/__init__.py
-          :language: python
-          :linenos:
-          :lines: 10-20
-
   - and another. `yahoo <http://www.yahoo.com>`_
   - `yahoo <http://www.yahoo.com>`_
   - ``hi``

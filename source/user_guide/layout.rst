@@ -527,14 +527,6 @@ Below is a list of built-in templates that you can insert into any section.
 Note that some of them may have CSS rules that assume a specific section (and
 will be named accordingly).
 
-.. note::
-
-    When adding/changing/overwritting a component, the ".html" suffix is optional.
-    That's why all of them are displayed without it in the following list.
-
-.. component-list::
-
-
 Add your own HTML templates to theme sections
 =============================================
 
@@ -587,10 +579,3 @@ The tag's ``content`` attribute will follow the format specified in the ``html_l
 
 References
 ==========
-
-Please find here the full list of keys you can use in the ``html_theme_options`` in ``conf.py``:
-
-.. include:: ../../src/pydata_sphinx_theme/theme/pydata_sphinx_theme/theme.conf
-    :code: ini
-    :class: highlight-ini
-

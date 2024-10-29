@@ -7,7 +7,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <link href="../_static/favicon-32x32.png" sizes="32x32" rel="icon" type="image/png">
+    <link href="../_static/favicon-16x16.png" sizes="16x16" rel="icon" type="image/png">
+    <link rel="shortcut icon" sizes="any" href="../_static/favicon.ico" type="image/x-icon">
+    <link href="../_static/android-chrome-192x192.png" sizes="192x192" rel="icon" type="image/png">
+    <link rel="mask-icon" color="#459db9" href="../_static/safari-pinned-tab.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../_static/apple-touch-icon.png" sizes="180x180" type="image/png">
+    <meta name="msapplication-TileColor" content="#459db9">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-TileImage" content="mstile-150x150.png">
     <title>Execution Libraries &#8212; pydata 0.1 documentation</title>
   
   
@@ -31,6 +39,8 @@
 <link href="../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=b83be735" />
   
   <!-- So that users can add custom icons -->
@@ -42,6 +52,13 @@
     <script src="../_static/documentation_options.js?v=e1a75a79"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'examples/execution';</script>
     <script src="../_static/pydata-icon.js?v=f63c87bd"></script>
     <script src="../_static/custom-icon.js?v=74687d30"></script>
@@ -547,19 +564,8 @@
                 <article class="bd-article">
                    <section id="execution-libraries">
 <h1>Execution Libraries<a class="headerlink" href="#execution-libraries" title="Link to this heading">#</a></h1>
-<p>Many execution libraries can be used to display the output of IPyhton cells. We used <code class="docutils literal notranslate"><span class="pre">MySTnb</span></code> to parse and display the outputs presented in <span class="xref std std-doc">./pydata</span>. In this section we’ll show alternatives that runs code for you using a Jupyter like kernel.</p>
 <section id="jupyterlite">
 <h2>Jupyterlite<a class="headerlink" href="#jupyterlite" title="Link to this heading">#</a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>The jupyterLite lib is not yet providing a handle to switch from light to dark theme. If you consider using it in your documentation you should also enforce the light theme to your users.
-Follow <a class="github reference external" href="https://github.com/jupyterlite/jupyterlite-sphinx/issues/69">jupyterlite/jupyterlite-sphinx#69</a> for more information.</p>
-</div>
-<p><code class="docutils literal notranslate"><span class="pre">jupyterlite-sphinx</span></code> brings the power of <a class="reference external" href="https://jupyterlite.readthedocs.io/en/latest/">JupyterLite</a> to your Sphinx documentation. It makes a full JupyterLite deployment in your docs and provide some utilities for using that deployment easily.</p>
-<p>This section demonstrate how it displays in a <strong>pydata-sphinx-theme</strong> context:</p>
-</section>
-<section id="jupyter-sphinx">
-<h2>jupyter-sphinx<a class="headerlink" href="#jupyter-sphinx" title="Link to this heading">#</a></h2>
 <p>Another common library is <code class="docutils literal notranslate"><span class="pre">jupyter-sphinx</span></code>.
 This section demonstrates a subset of functionality to make sure it behaves as expected.</p>
 </section>
@@ -616,7 +622,6 @@ This section demonstrates a subset of functionality to make sure it behaves as e
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyterlite">Jupyterlite</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-sphinx">jupyter-sphinx</a></li>
 </ul>
   </nav></div>
 

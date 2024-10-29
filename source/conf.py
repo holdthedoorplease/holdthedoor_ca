@@ -14,9 +14,18 @@ release = '0.1'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
+
 extensions = [
-    'myst_parser',
-    'ablog',
+    'myst_parser',          # Markdown support
+    'ablog',                # Blogging (optional)
+    'sphinx_design',        
+    'sphinx.ext.autodoc',   # Code documentation from docstrings
+    'sphinx.ext.intersphinx', # External links to other docs (optional)
+
+    'sphinx_togglebutton',  # Collapsible content
+    'sphinx_favicon',       # Favicon management (optional)
+    'sphinxcontrib.youtube',
+
 ]
 
 
@@ -203,3 +212,21 @@ favicons = [
     {"name": "theme-color", "content": "#ffffff"},
     {"name": "msapplication-TileImage", "content": "mstile-150x150.png"},
 ]
+
+
+# Configuration to suppress specific warnings
+suppress_warnings = [
+    "autodoc",           # General autodoc warnings
+    "ref.doc",           # Missing reference documentation
+    "toc.excluded",      # Excluded documents in toctree
+    "misc.highlighting_failure",  # Misc highlighting issues
+]
+
+# Skip `quote` specifically in urllib.parse
+def skip_quote(app, what, name, obj, skip, options):
+    if name == "quote" and what == "function" and "urllib.parse" in options.get("module", ""):
+        return True
+    return skip
+
+def setup(app):
+    app.connect("autodoc-skip-member", skip_quote)

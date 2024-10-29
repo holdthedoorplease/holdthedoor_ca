@@ -66,25 +66,6 @@ Follow these steps to update the base variables:
    Refer to :ref:`the managing themes section in this documentation <manage-themes>` if
    you desire a different behavior between the light and dark theme.
 
-For a complete list of the theme variables that you may override, see the
-`theme variables defaults CSS file <pydata-css-variables_>`_:
-
-.. literalinclude:: ../../src/pydata_sphinx_theme/assets/styles/variables/_layout.scss
-  :language: scss
-
-.. literalinclude:: ../../src/pydata_sphinx_theme/assets/styles/variables/_fonts.scss
-  :language: scss
-
-.. literalinclude:: ../../src/pydata_sphinx_theme/assets/styles/variables/_icons.scss
-  :language: scss
-
-.. literalinclude:: ../../src/pydata_sphinx_theme/assets/styles/variables/_admonitions.scss
-  :language: scss
-
-.. literalinclude:: ../../src/pydata_sphinx_theme/assets/styles/variables/_versionmodified.scss
-  :language: scss
-
-.. _color-variables:
 
 Color variables
 ---------------
@@ -188,7 +169,6 @@ The following image should help you understand these overlays:
    https://github.com/pygments/pygments/issues/2130). So for now it's
    just a raw download link.
 
-For a complete list of the theme colors that you may override, see the :download:`PyData theme CSS colors stylesheet <../../src/pydata_sphinx_theme/assets/styles/variables/_color.scss>`.
 
 Configure pygments theme
 ========================

@@ -67,13 +67,3 @@ examples/index
 
 Changelog <https://github.com/pydata/pydata-sphinx-theme/releases>
 ```
-
-## API
-
-The content of the exposed `pydata_sphinx_theme` API.
-
-```{toctree}
-:maxdepth: 2
-
-API <api/index>
-```
