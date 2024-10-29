@@ -1,0 +1,840 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Accessibility &#8212; pydata 0.1 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=b83be735" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="../_static/documentation_options.js?v=e1a75a79"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'user_guide/accessibility';</script>
+    <script src="../_static/pydata-icon.js?v=f63c87bd"></script>
+    <script src="../_static/custom-icon.js?v=74687d30"></script>
+    <link rel="icon" href="../_static/logo.svg"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Analytics and usage services" href="analytics.html" />
+    <link rel="prev" title="Light and dark themes" href="light-dark.html" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+    <meta name="docbuild:last-update" content="Oct 29, 2024"/>   
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+  <aside class="bd-header-announcement d-print-none d-none" aria-label="Announcement" data-pst-announcement-url="https://raw.githubusercontent.com/pydata/pydata-sphinx-theme/main/docs/_templates/custom-template.html"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.svg" class="logo__image only-light" alt=""/>
+    <img src="../_static/logo-dark.svg" class="logo__image only-dark pst-js-only" alt=""/>
+  
+  
+    <p class="title logo__title">PyData Theme</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
+    User Guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../community/index.html">
+    Contributor Guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../examples/index.html">
+    Examples
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://github.com/pydata/pydata-sphinx-theme/releases">
+    Changelog
+  </a>
+</li>
+
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+<li class=" ">
+  <a class="nav-link dropdown-item nav-external" href="https://pydata.org">
+    PyData Website
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-external" href="https://numfocus.org/">
+    NumFocus
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-external" href="https://numfocus.org/donate">
+    Donate to NumFocus
+  </a>
+</li>
+
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/PyData" title="Twitter" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-twitter fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Twitter</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/pydata/pydata-sphinx-theme" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/pydata-sphinx-theme" title="PyPI" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-custom fa-pypi fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">PyPI</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://pydata.org" title="PyData" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-custom fa-pydata fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">PyData</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
+    User Guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../community/index.html">
+    Contributor Guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../examples/index.html">
+    Examples
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://github.com/pydata/pydata-sphinx-theme/releases">
+    Changelog
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://pydata.org">
+    PyData Website
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://numfocus.org/">
+    NumFocus
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://numfocus.org/donate">
+    Donate to NumFocus
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/PyData" title="Twitter" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-twitter fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Twitter</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/pydata/pydata-sphinx-theme" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/pydata-sphinx-theme" title="PyPI" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-custom fa-pypi fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">PyPI</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://pydata.org" title="PyData" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-custom fa-pydata fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">PyData</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Get started</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="layout.html">Theme Structure and Layout</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Navigation and links</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="navigation.html">Navigation depth and collapsing sidebars</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page-toc.html">Page Table of Contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="header-links.html">Header links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source-buttons.html">Source Buttons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indices.html">Sphinx indices</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">User Interface</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="announcements.html">Announcement banners</a></li>
+<li class="toctree-l1"><a class="reference internal" href="version-dropdown.html">Version switcher dropdowns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="search.html">Search bar / search button</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keyboard-shortcuts.html">Keyboard shortcuts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="i18n.html">Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="back-to-top.html">Back to Top button</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Content and features</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="theme-elements.html">Theme-specific elements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ablog.html">Blogs with <code class="docutils literal notranslate"><span class="pre">ABlog</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="web-components.html">Sphinx Design Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extending.html">Extending the theme</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Theming and Style</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="branding.html">Branding and logo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="styling.html">Theme variables and CSS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fonts.html">Fonts and FontAwesome</a></li>
+<li class="toctree-l1"><a class="reference internal" href="light-dark.html">Light and dark themes</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Accessibility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analytics.html">Analytics and usage services</a></li>
+<li class="toctree-l1"><a class="reference internal" href="static_assets.html">Add custom CSS and JS assets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="performance.html">Build performance and size</a></li>
+<li class="toctree-l1"><a class="reference internal" href="warnings.html">Theme changes, deprecations, and warnings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="readthedocs.html">Read the Docs functionality</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">User Guide</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Accessibility</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                   <section id="accessibility">
+<h1>Accessibility<a class="headerlink" href="#accessibility" title="Link to this heading">#</a></h1>
+<p>Creating and publishing content that does not exclude disabled users is a complex and iterative task.</p>
+<p>While there is no one-size-fits-all solution to maintaining accessible content,
+the PyData Sphinx Theme and this documentation site use some techniques to avoid common content shortcomings.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Issues and pull requests to identify or fix accessibility issues on this theme or site are heartily welcomed!</p>
+</div>
+<section id="what-we-ve-done">
+<h2>What We’ve Done<a class="headerlink" href="#what-we-ve-done" title="Link to this heading">#</a></h2>
+<section id="metadata">
+<h3>Metadata<a class="headerlink" href="#metadata" title="Link to this heading">#</a></h3>
+<p>Several of our documentation pages contain metadata (i.e., <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">meta::</span></code> directives
+in reStructuredText) giving summaries of the page contents. If you notice a
+page that lacks metadata, please open a pull request to add it!</p>
+</section>
+<section id="colors">
+<h3>Colors<a class="headerlink" href="#colors" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Our default code highlighting styles are <code class="docutils literal notranslate"><span class="pre">a11y-high-contrast-light</span></code> and
+<code class="docutils literal notranslate"><span class="pre">a11y-high-contrast-dark</span></code> from <a class="github reference external" href="https://github.com/Quansight-Labs/accessible-pygments">Quansight-Labs/accessible-pygments</a>.
+These styles are designed to meet WCAG 2 AA or AAA contrast requirements.
+If you don’t like the look of our default code highlighting styles, there are several more
+to choose from at <a class="github reference external" href="https://github.com/Quansight-Labs/accessible-pygments">Quansight-Labs/accessible-pygments</a>.</p></li>
+<li><p>We recently revisited the PyData Sphinx theme color palette to ensure that
+the colors we use meet WCAG 2 AA or AAA contrast requirements.</p></li>
+<li><p>We also re-defined our <code class="docutils literal notranslate"><span class="pre">primary</span></code> and <code class="docutils literal notranslate"><span class="pre">secondary</span></code> colors to be more accessible and distinct from semantic colors used
+to denote success, warning, info, and danger contexts or information.</p></li>
+<li><p>We simplified the color palette and removed some colors that were problematic in meeting WCAG 2 AA or AAA contrast requirements
+and for certain types of colorblindness.</p></li>
+<li><p>We have improved how we assign text colors to interactive elements such as buttons and dropdowns to ensure that they meet
+WCAG 2 AA or AAA contrast requirements.</p></li>
+</ul>
+</section>
+<section id="keyboard-navigation-support">
+<h3>Keyboard Navigation Support<a class="headerlink" href="#keyboard-navigation-support" title="Link to this heading">#</a></h3>
+<p>For all buttons, dropdowns, tabbed panels, hamburger menus, modals, overlays,
+links and other interactive elements, we have worked to ensure they:</p>
+<ul class="simple">
+<li><p>Have a visible focus indicator (WCAG 2.4.7)</p></li>
+<li><p>Can be accessed via keyboard navigation (WCAG 2.1.1)</p></li>
+</ul>
+</section>
+</section>
+<section id="what-you-can-do">
+<h2>What You Can Do<a class="headerlink" href="#what-you-can-do" title="Link to this heading">#</a></h2>
+<section id="site-configuration">
+<h3>Site configuration<a class="headerlink" href="#site-configuration" title="Link to this heading">#</a></h3>
+<p>The following sections include recommendations for settings in the <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file that can positively impact the
+accessibility of content generated by this theme and Sphinx in general.</p>
+</section>
+<section id="natural-language">
+<h3>Natural Language<a class="headerlink" href="#natural-language" title="Link to this heading">#</a></h3>
+<p>If not using a more robust <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/advanced/intl.html">internationalization approach</a>,
+specifying at least the baseline natural language will help assistive technology
+identify if the content is in a language the reader understands.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>In your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file, <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language">specifying the language your docs are written in</a> will propagate to the top-level <code class="docutils literal notranslate"><span class="pre">HTML</span></code> tag.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>  <span class="n">language</span> <span class="o">=</span> <span class="s2">&quot;en&quot;</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="add-a-site-map">
+<h3>Add a Site Map<a class="headerlink" href="#add-a-site-map" title="Link to this heading">#</a></h3>
+<p>Site maps, usually served from a file called <code class="docutils literal notranslate"><span class="pre">sitemap.xml</span></code> are a broadly-employed
+approach to telling programs like search engines and assistive technologies where
+different content appears on a website.</p>
+<p>If using a service like <a class="reference external" href="https://about.readthedocs.com/">ReadTheDocs</a>, these files
+will be created for you <em>automatically</em>, but for some other approaches below,
+it’s handy to generate a <code class="docutils literal notranslate"><span class="pre">sitemap.xml</span></code> locally or in CI with a tool like
+<a class="reference external" href="https://pypi.org/project/sphinx-sitemap/">sphinx-sitemap</a>.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>For a simple site (no extra languages or versions), ensure <code class="docutils literal notranslate"><span class="pre">sphinx-sitemap</span></code>
+is installed in your documentation environment, and modify your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>    <span class="n">extensions</span> <span class="o">+=</span> <span class="p">[</span><span class="s2">&quot;sphinx_sitemap&quot;</span><span class="p">]</span>
+
+    <span class="n">html_baseurl</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;SPHINX_HTML_BASE_URL&quot;</span><span class="p">,</span> <span class="s2">&quot;http://127.0.0.1:8000/&quot;</span><span class="p">)</span>
+    <span class="n">sitemap_locales</span> <span class="o">=</span> <span class="p">[</span><span class="kc">None</span><span class="p">]</span>
+    <span class="n">sitemap_url_scheme</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{link}</span><span class="s2">&quot;</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="logo-best-practices">
+<h3>Logo best practices<a class="headerlink" href="#logo-best-practices" title="Link to this heading">#</a></h3>
+<p>If you use both light and dark themes, it’s best to provide a logo that works well in both or to provide an alternative for the dark theme.
+If you have a logo, you can add alt-text to it by adding the following to your
+<code class="docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>  <span class="s2">&quot;logo&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="s2">&quot;PyData Theme&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;image_dark&quot;</span><span class="p">:</span> <span class="s2">&quot;_static/logo-dark.svg&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;alt_text&quot;</span><span class="p">:</span> <span class="s2">&quot;PyData Theme home&quot;</span><span class="p">,</span>
+  <span class="p">},</span>
+</pre></div>
+</div>
+<p>Note the use of “home” in the alt text to indicate that the logo is also a link to the home page.</p>
+</section>
+<section id="in-the-browser">
+<h3>In the Browser<a class="headerlink" href="#in-the-browser" title="Link to this heading">#</a></h3>
+<p>Several in-browser tools exist for interactively debugging the accessibility
+of a single page at a time and can be useful during the content development cycle.</p>
+</section>
+<section id="built-in-tools">
+<h3>Built-in tools<a class="headerlink" href="#built-in-tools" title="Link to this heading">#</a></h3>
+<p>Most major browsers, including <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Tools/Accessibility_inspector">Firefox</a>
+and <a class="reference external" href="https://developers.google.com/web/tools/chrome-devtools/accessibility/reference">Chrome</a>,
+have accessibility tools built-in as part of their web developer tools.
+These tools can help to quickly identify accessibility issues and often include links to standards.</p>
+<section id="tota11y">
+<h4>tota11y<a class="headerlink" href="#tota11y" title="Link to this heading">#</a></h4>
+<p><a class="reference external" href="https://khan.github.io/tota11y/#Installation">tota11y</a> is an open source
+“bookmarklet” which modifies the currently-loaded page in place and highlights
+several accessibility issues.</p>
+</section>
+<section id="wave">
+<h4>WAVE<a class="headerlink" href="#wave" title="Link to this heading">#</a></h4>
+<p><a class="reference external" href="https://wave.webaim.org/extension/">WAVE</a> is a proprietary (but <em>gratis</em>)
+browser extension which can highlight multiple issues.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Note that automated testing and extensions such as the ones mentioned above will at best catch 30-40% of accessibility issues.
+They are not a replacement for manual testing and having a perfect score on any of these tools does not mean that
+the site can be used by disabled users but instead signals that it follows some accessibility best practices.</p>
+</div>
+</section>
+</section>
+<section id="in-continuous-integration">
+<h3>In Continuous Integration<a class="headerlink" href="#in-continuous-integration" title="Link to this heading">#</a></h3>
+<p>Several automated tools are available for assessing <em>glaring</em> accessibility
+issues across some pages at once, usually with many configurable options.</p>
+<section id="lighthouse">
+<h4>Lighthouse<a class="headerlink" href="#lighthouse" title="Link to this heading">#</a></h4>
+<p><a class="reference external" href="https://developers.google.com/web/tools/lighthouse">Lighthouse</a> provides an automated assessment of basic accessibility issues in addition to search engine
+automation, page performance, and other best practices.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Specifically, <a class="reference external" href="https://github.com/foo-software/lighthouse-check-action">foo-software/lighthouse-check-action</a>
+is run on selected pages from the generated documentation site.</p>
+</div>
+</section>
+</section>
+</section>
+</section>
+
+<div class="section ablog__blog_comments">
+   
+</div>
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="light-dark.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Light and dark themes</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="analytics.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Analytics and usage services</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-we-ve-done">What We’ve Done</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metadata">Metadata</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#colors">Colors</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#keyboard-navigation-support">Keyboard Navigation Support</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-you-can-do">What You Can Do</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#site-configuration">Site configuration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#natural-language">Natural Language</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-a-site-map">Add a Site Map</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#logo-best-practices">Logo best practices</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#in-the-browser">In the Browser</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#built-in-tools">Built-in tools</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tota11y">tota11y</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#wave">WAVE</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#in-continuous-integration">In Continuous Integration</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#lighthouse">Lighthouse</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+
+  <div class="tocsection sourcelink">
+    <a href="../_sources/user_guide/accessibility.md">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2024, henry.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__center">
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.0.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
