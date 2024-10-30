@@ -7,7 +7,7 @@ myst:
 html_theme.sidebar_secondary.remove: true
 ---
 
-# The PyData Sphinx Theme
+# We <span style="color:red;">HoldTheDoor</span> Open to Canada for You.
 
 A clean, Bootstrap-based Sphinx theme by and for [the PyData community](https://pydata.org).
 

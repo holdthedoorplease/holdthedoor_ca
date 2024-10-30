@@ -9,7 +9,7 @@
 project = 'HoldTheDoor'
 copyright = '2024, HoldTheDoor'
 author = 'HoldTheDoor'
-release = '0.2'
+release = '1.0.0'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -41,8 +41,7 @@ extensions = [
 
 html_theme = 'pydata_sphinx_theme'
 html_static_path = ['_static']
-
-jupyterlite_config = "jupyterlite_config.json"
+html_title = "We Hold The Door Open to Canada for You!"
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
@@ -52,7 +51,6 @@ templates_path = ["_templates"]
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "**.ipynb_checkpoints"]
 
-intersphinx_mapping = {"sphinx": ("https://www.sphinx-doc.org/en/master", None)}
 
 # -- Sitemap -----------------------------------------------------------------
 
@@ -124,7 +122,7 @@ html_theme_options = {
     # "github_url": "https://github.com/pydata/pydata-sphinx-theme",
     # "twitter_url": "https://twitter.com/PyData",
     "logo": {
-        "text": "Hold The Door",
+        "text": "HoldTheDoor.ca",
         "image_dark": "_static/logo-dark.svg",
     },
     "use_edit_page_button": False,
@@ -171,12 +169,8 @@ html_sidebars = {
 }
 
 html_context = {
-    "github_user": "pydata",
-    "github_repo": "pydata-sphinx-theme",
-    "github_version": "main",
     "doc_path": "docs",
-    "display_github": False,
-    "display_hosted_by_rtd": False
+    "title": "HoldTheDoor - Your Custom Slogan Here"
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
