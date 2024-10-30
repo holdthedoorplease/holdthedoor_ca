@@ -98,17 +98,30 @@ html_last_updated_fmt = ""  # to reveal the build date in the pages meta
 html_theme_options = {
     "external_links": [
         {
-            "url": "https://pydata.org",
-            "name": "PyData Website",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship.html",
+            "name": "Official Website of IRCC",
         },
         {
-            "url": "https://numfocus.org/",
-            "name": "NumFocus",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/account.html",
+            "name": "Official Website of GCKey",
         },
         {
-            "url": "https://numfocus.org/donate",
-            "name": "Donate to NumFocus",
+            "url": "https://ircc-tracker-suivi.apps.cic.gc.ca/en/login",
+            "name": "Official Website of Tracker",
         },
+        {
+            "url": "https://atip-aiprp.apps.gc.ca/atip/privacyTerms.do?requestflow=ircc",
+            "name": "Official Website of ATIP(IRCC)",
+        },
+        {
+            "url": "https://atip-aiprp.tbs-sct.gc.ca/",
+            "name": "Official Website of ATIP(CBSA)",
+        },
+        {
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html",
+            "name": "Official Website of Processing Time",
+        },
+
     ],
     "header_links_before_dropdown": 4,
     "icon_links": [
@@ -139,7 +152,8 @@ html_theme_options = {
     # "article_footer_items": ["test", "test"],
     # "content_footer_items": ["test", "test"],
     "footer_start": ["copyright"],
-    "footer_center": ["sphinx-version"],
+    #"footer_center": ["sphinx-version"],
+    "footer_end": ["copyright"],
     "secondary_sidebar_items": {
         "**/*": ["page-toc", "edit-this-page", "sourcelink"],
         "examples/no-sidebar": [],
