@@ -175,6 +175,8 @@ html_context = {
     "github_repo": "pydata-sphinx-theme",
     "github_version": "main",
     "doc_path": "docs",
+    "display_github": False,
+    "display_hosted_by_rtd": False
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
