@@ -28,9 +28,9 @@ A clean, Bootstrap-based Sphinx theme by and for [the PyData community](https://
 - header: "{fas}`circle-half-stroke;pst-color-primary` Light / Dark theme"
   content: "Users can toggle between light and dark themes interactively."
 - header: "{fas}`palette;pst-color-primary` Customizable UI and themes"
-  content: "Customize colors and branding with CSS variables, and build custom UIs with [Sphinx Design components](user_guide/web-components)."
+  content: "Customize colors and branding with CSS variables, and build custom UIs with [Sphinx Design components](visitor/web-components)."
 - header: "{fab}`python;pst-color-primary` Supports PyData and Jupyter"
-  content: "CSS and UI support for [Jupyter extensions](examples/execution) and [PyData execution outputs](examples/pydata.ipynb)."
+  content: "CSS and UI support for [Jupyter extensions](examples/execution) and [PyData execution outputs]."
 - header: "{fas}`lightbulb;pst-color-primary` Example Gallery"
   content: "See [our gallery](examples/gallery.md) of projects that use this theme."
 ```
@@ -39,29 +39,8 @@ A clean, Bootstrap-based Sphinx theme by and for [the PyData community](https://
 If you are looking for a Sphinx theme that puts all of its sub-pages in the sidebar, the [Sphinx Book Theme](https://sphinx-book-theme.readthedocs.io/) has a similar look and feel, and [Furo](https://pradyunsg.me/furo/quickstart/) is another excellent choice. You can also see the [Sphinx Themes Gallery](https://sphinx-themes.org) for more ideas.
 ```
 
-## User Guide
 
-Information about using, configuration, and customizing this theme.
-
-```{gallery-grid}
-:grid-columns: 1 2 2 3
-
-- header: "{fab}`bootstrap;pst-color-primary` Built with Bootstrap"
-  content: "Use Bootstrap classes and functionality in your documentation."
-  link: https://google.com
-- header: "{fas}`bolt;pst-color-primary` Responsive Design"
-  content: "Site sections will change behavior and size at different screen sizes."
-- header: "{fas}`circle-half-stroke;pst-color-primary` Light / Dark theme"
-  content: "Users can toggle between light and dark themes interactively."
-- header: "{fas}`palette;pst-color-primary` Customizable UI and themes"
-  content: "Customize colors and branding with CSS variables, and build custom UIs with [Sphinx Design components](user_guide/web-components)."
-- header: "{fab}`python;pst-color-primary` Supports PyData and Jupyter"
-  content: "CSS and UI support for [Jupyter extensions](examples/execution) and [PyData execution outputs](examples/pydata.ipynb)."
-- header: "{fas}`lightbulb;pst-color-primary` Example Gallery"
-  content: "See [our gallery](examples/gallery.md) of projects that use this theme."
-```
-
-## Community and contribution guide
+## Temporary Resident Visa
 
 Information about the community behind this theme and how you can contribute.
 
@@ -76,11 +55,70 @@ Information about the community behind this theme and how you can contribute.
 - header: "{fas}`circle-half-stroke;pst-color-primary` Light / Dark theme"
   content: "Users can toggle between light and dark themes interactively."
 - header: "{fas}`palette;pst-color-primary` Customizable UI and themes"
-  content: "Customize colors and branding with CSS variables, and build custom UIs with [Sphinx Design components](user_guide/web-components)."
+  content: "Customize colors and branding with CSS variables, and build custom UIs with [Sphinx Design components](visitor/web-components)."
 - header: "{fab}`python;pst-color-primary` Supports PyData and Jupyter"
-  content: "CSS and UI support for [Jupyter extensions](examples/execution) and [PyData execution outputs](examples/pydata.ipynb)."
+  content: "CSS and UI support for [Jupyter extensions](examples/execution) and [PyData execution outputs]."
 - header: "{fas}`lightbulb;pst-color-primary` Example Gallery"
   content: "See [our gallery](examples/gallery.md) of projects that use this theme."
+```
+
+
+## Permanent Resident Visa
+
+Information about using, configuration, and customizing this theme.
+
+```{gallery-grid}
+:grid-columns: 1 2 2 3
+
+- header: "{fab}`bootstrap;pst-color-primary` Built with Bootstrap"
+  content: "Use Bootstrap classes and functionality in your documentation."
+  link: https://google.com
+- header: "{fas}`bolt;pst-color-primary` Responsive Design"
+  content: "Site sections will change behavior and size at different screen sizes."
+- header: "{fas}`circle-half-stroke;pst-color-primary` Light / Dark theme"
+  content: "Users can toggle between light and dark themes interactively."
+- header: "{fas}`palette;pst-color-primary` Customizable UI and themes"
+  content: "Customize colors and branding with CSS variables, and build custom UIs with [Sphinx Design components](visitor/web-components)."
+- header: "{fab}`python;pst-color-primary` Supports PyData and Jupyter"
+  content: "CSS and UI support for [Jupyter extensions](examples/execution) and [PyData execution outputs]."
+- header: "{fas}`lightbulb;pst-color-primary` Example Gallery"
+  content: "See [our gallery](examples/gallery.md) of projects that use this theme."
+```
+
+## Become a Citizen
+
+Information about using, configuration, and customizing this theme.
+
+```{gallery-grid}
+:grid-columns: 1 2 2 3
+
+- header: "{fab}`bootstrap;pst-color-primary` Built with Bootstrap"
+  content: "Use Bootstrap classes and functionality in your documentation."
+  link: https://google.com
+- header: "{fas}`bolt;pst-color-primary` Responsive Design"
+  content: "Site sections will change behavior and size at different screen sizes."
+- header: "{fas}`circle-half-stroke;pst-color-primary` Light / Dark theme"
+  content: "Users can toggle between light and dark themes interactively."
+```
+
+
+```{toctree}
+:hidden:
+
+visitor/index
+```
+
+
+```{toctree}
+:hidden:
+
+immigration/index
+```
+
+```{toctree}
+:hidden:
+
+citizen/index
 ```
 
 ## Examples
@@ -93,8 +131,8 @@ Several example pages to demonstrate the functionality of this theme when used a
 examples/index
 ```
 
-<!-- ```{toctree}
+```{toctree}
 :hidden:
 
 Changelog <https://github.com/pydata/pydata-sphinx-theme/releases>
-``` -->
+```

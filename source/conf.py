@@ -162,7 +162,7 @@ html_theme_options = {
 }
 
 html_sidebars = {
-    "community/index": [
+    "immigration/index": [
         "sidebar-nav-bs",
         "custom-template",
     ],  # This ensures we test for custom sidebars
