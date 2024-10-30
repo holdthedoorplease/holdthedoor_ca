@@ -97,9 +97,9 @@ If you have a logo, you can add alt-text to it by adding the following to your
 
 ```python
   "logo": {
-      "text": "PyData Theme",
+      "text": "Hold The Door",
       "image_dark": "_static/logo-dark.svg",
-      "alt_text": "PyData Theme home",
+      "alt_text": "Hold The Door home",
   },
 ```
 

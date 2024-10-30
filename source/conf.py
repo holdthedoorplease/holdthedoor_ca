@@ -6,10 +6,10 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'pydata'
-copyright = '2024, henry'
-author = 'henry'
-release = '0.1'
+project = 'HoldTheDoor'
+copyright = '2024, HoldTheDoor'
+author = 'HoldTheDoor'
+release = '0.2'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -25,6 +25,7 @@ extensions = [
     'myst_parser',
     'sphinx_design', 
     'gallery_directive',
+    'component_directive',
     'ablog',                # Blogging (optional)
     'sphinx.ext.autodoc',   # Code documentation from docstrings
     'sphinx.ext.intersphinx', # External links to other docs (optional)
@@ -32,7 +33,6 @@ extensions = [
     'sphinx_togglebutton',  # Collapsible content
     'sphinx_favicon',       # Favicon management (optional)
     'sphinxcontrib.youtube',
-
 ]
 
 
@@ -139,7 +139,7 @@ html_theme_options = {
     # "github_url": "https://github.com/pydata/pydata-sphinx-theme",
     # "twitter_url": "https://twitter.com/PyData",
     "logo": {
-        "text": "PyData Theme",
+        "text": "Hold The Door",
         "image_dark": "_static/logo-dark.svg",
     },
     "use_edit_page_button": False,
