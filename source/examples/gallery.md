@@ -10,9 +10,6 @@ and open a Pull Request to add it.
 These projects are our earliest adopters and/or present some interesting customization.
 Check their repositories for more information.
 
-```{gallery-grid} ../_static/gallery.yaml
-:grid-columns: "1 1 2 2"
-```
 
 ## Other projects using this theme
 
