@@ -115,25 +115,10 @@ html_theme_options = {
     "header_links_before_dropdown": 4,
     "icon_links": [
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/PyData",
-            "icon": "fa-brands fa-twitter",
-        },
-        {
-            "name": "GitHub",
-            "url": "https://github.com/pydata/pydata-sphinx-theme",
-            "icon": "fa-brands fa-github",
-        },
-        {
-            "name": "PyPI",
-            "url": "https://pypi.org/project/pydata-sphinx-theme",
-            "icon": "fa-custom fa-pypi",
-        },
-        {
-            "name": "PyData",
-            "url": "https://pydata.org",
-            "icon": "fa-custom fa-pydata",
-        },
+            "name": "X",
+            "url": "https://x.com/holdthedoor_ca",
+            "icon": "fa-brands fa-x-twitter",
+        }
     ],
     # alternative way to set twitter and github header icons
     # "github_url": "https://github.com/pydata/pydata-sphinx-theme",
