@@ -142,7 +142,7 @@ html_theme_options = {
     "show_toc_level": 1,
     "navbar_align": "left",  # [left, content, right] For testing that the navbar items align properly
     # "show_nav_level": 2,
-    "announcement": "https://raw.githubusercontent.com/pydata/pydata-sphinx-theme/main/docs/_templates/custom-template.html",
+    "announcement": "<div class='sidebar-message'>🇨🇦 Canada is famous for its friendliness, diversity, and freedom. If you'd like to travel/study/work, or immigrate here, we'd like to hold the door for you.</div>",
     "show_version_warning_banner": True,
     #"navbar_center": ["version-switcher", "navbar-nav"],
     # "navbar_start": ["navbar-logo"],
