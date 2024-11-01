@@ -52,3 +52,49 @@ div.downstream-project-links a {
   text-decoration: none !important;
   color: inherit !important;
 }
+
+
+/* _static/news/custom.css */
+
+/* Tag styling */
+.tag-policy {
+  background-color: #007bff;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.tag-visa {
+  background-color: #28a745;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.tag-law {
+  background-color: #ffc107;
+  color: black;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+/* General tag cloud styling */
+.tagcloud {
+  margin: 20px 0;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.tagcloud a {
+  display: inline-block;
+  margin: 5px;
+  padding: 3px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.tagcloud a:hover {
+  transform: scale(1.1);
+}

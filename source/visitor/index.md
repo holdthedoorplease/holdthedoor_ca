@@ -8,73 +8,71 @@ myst:
 
 # Visit Canada
 
-You can configure the behavior, look, and feel of the theme in many ways.
-The remaining pages in the user guide cover various ways of doing so.
+Explore the various types of visitor visas to Canada and find the one that best suits your needs.
 
-```{danger}
-This theme is still under active development, and we make no promises
-about the stability of any specific HTML structure, CSS variables, etc.
-Make these customizations at your own risk, and pin versions if you're
-worried about breaking changes!
+```{gallery-grid}
+:grid-columns: 1 2 2 3
+
+- header: "{fas}`book;pst-color-primary` Study in Canada"
+  content: "Pursue your education in Canada with our Student Visa information."
+  link: study/index
+
+- header: "{fas}`plane;pst-color-primary` Travel to Canada"
+  content: "Plan your vacation with ease using our Tourist Visa resources."
+  link: travel/index
+
+- header: "{fas}`users;pst-color-primary` Visit Family in Canada"
+  content: "Learn about visas to visit your family members in Canada, including the Super Visa."
+  link: supervisa/index
+
+- header: "{fas}`briefcase;pst-color-primary` Work in Canada"
+  content: "Find opportunities to work in Canada through our Work Visa guides."
+  link: work/index
+
+- header: "{fas}`handshake;pst-color-primary` Visit Canada on Business"
+  content: "Explore options for business visitors and entrepreneurs."
+  link: business/index
+
+- header: "{fas}`info-circle;pst-color-primary` All Visitor Visas"
+  content: "Find information on all types of visitor visas to Canada."
 ```
+
 
 There are a number of options for configuring your site's look and feel.
 All configuration options are passed with the `html_theme_options` variable in your `conf.py` file.
 This is a dictionary with `key: val` pairs that you can configure in various ways.
 
 ```{toctree}
-:caption: Get started
+:maxdepth: 2
+:caption: Study in Canada
 
-install
-layout
-```
-
-```{toctree}
-:caption: Navigation and links
-
-navigation
-page-toc
-header-links
-source-buttons
-indices
+study/index
 ```
 
 ```{toctree}
 :maxdepth: 2
-:caption: User Interface
+:caption: Travel to Canada
 
-announcements
-version-dropdown
-search
-keyboard-shortcuts
-i18n
-back-to-top
+travel/index
 ```
 
 ```{toctree}
-:caption: Content and features
-theme-elements
-ablog
-web-components
-extending
+:maxdepth: 2
+:caption: Super Visa
+
+supervisa/index
 ```
 
 ```{toctree}
-:caption: Theming and Style
+:maxdepth: 2
+:caption: Work in Canada
 
-branding
-styling
-fonts
-light-dark
+work/index
 ```
 
 ```{toctree}
-:caption: Miscellaneous
+:maxdepth: 2
+:caption: Business in Canada
 
-accessibility
-analytics
-static_assets
-performance
-warnings
-readthedocs
+business/index
 ```

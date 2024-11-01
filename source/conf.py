@@ -19,6 +19,11 @@ import os
 import sys
 # Insert the '_extension' directory into the path so Sphinx can find it
 sys.path.insert(0, os.path.abspath('_extension'))
+from datetime import date
+import ablog
+
+import logging
+logging.getLogger('sphinx').setLevel(logging.DEBUG)
 
 
 extensions = [
@@ -33,8 +38,42 @@ extensions = [
     'sphinx_togglebutton',  # Collapsible content
     'sphinx_favicon',       # Favicon management (optional)
     'sphinxcontrib.youtube',
+    'sphinx.ext.autosectionlabel',
 ]
 
+autosectionlabel_prefix_document = True
+
+# ABlog configuration
+# ABlog configuration
+blog_basepath = 'news'
+blog_path = 'news'
+blog_post_pattern = 'news/articles/*/*/*.rst'
+blog_feed_fulltext = True
+blog_feed_subtitle = "Immigration News and Updates"
+blog_feed_length = 20
+
+# Fixed blog_authors configuration - note the space after 'Henry'!
+blog_authors = {
+    "AAA": ("CCC", None),
+}
+
+# Location configuration
+blog_locations = {
+    'Canada': ('Canada', None),
+}
+blog_default_location = 'Canada'
+
+# Language configuration
+blog_languages = {
+    'en': ('English', None),
+}
+blog_default_language = 'en'
+
+# Post related settings
+post_auto_excerpt = 1
+post_auto_image = 0
+post_date_format = '%Y-%m-%d'
+post_date_format_short = '%B %d, %Y'
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
@@ -142,7 +181,7 @@ html_theme_options = {
     "show_toc_level": 1,
     "navbar_align": "left",  # [left, content, right] For testing that the navbar items align properly
     # "show_nav_level": 2,
-    "announcement": "<div class='sidebar-message'>🇨🇦 Canada is famous for its friendliness, diversity, and freedom. If you'd like to travel/study/work, or immigrate here, we'd like to hold the door for you.</div>",
+    #"announcement": "<div class='sidebar-message'>🇨🇦 Canada is famous for its friendliness, diversity, and freedom. If you'd like to travel/study/work, or immigrate here, we'd like to hold the door for you.</div>",
     "show_version_warning_banner": True,
     #"navbar_center": ["version-switcher", "navbar-nav"],
     # "navbar_start": ["navbar-logo"],
@@ -151,11 +190,11 @@ html_theme_options = {
     # "primary_sidebar_end": ["custom-template", "sidebar-ethical-ads"],
     # "article_footer_items": ["test", "test"],
     # "content_footer_items": ["test", "test"],
-    "footer_start": ["copyright"],
+    "footer_start": "",
     #"footer_center": ["sphinx-version"],
     "footer_end": ["copyright"],
     "secondary_sidebar_items": {
-        "**/*": ["page-toc", "edit-this-page", "sourcelink"],
+        "**/*": ["page-toc", "sourcelink"],
         "examples/no-sidebar": [],
     },
     # "back_to_top_button": False,

@@ -1,0 +1,43 @@
+<!-- source/news/_templates/news_page.html -->
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="news-container">
+    <h1>Immigration News</h1>
+    
+    <!-- Articles List -->
+    <div class="news-list">
+        {% for post in posts %}
+        <article class="news-item">
+            <div class="news-meta">
+                <span class="news-date">{{ post.date.strftime('%Y-%m-%d') }}</span>
+            </div>
+            <h2 class="news-title">
+                <a href="{{ pathto(post.docname) }}">{{ post.title }}</a>
+            </h2>
+            <div class="news-tags">
+                {% for tag in post.tags %}
+                <a href="{{ pathto('tags/' + tag) }}" class="tag">{{ tag }}</a>
+                {% endfor %}
+            </div>
+            <div class="news-summary">
+                {{ post.excerpt }}
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination">
+        {% if prev_page %}
+        <a href="{{ prev_page.url }}" class="prev">← Previous</a>
+        {% endif %}
+        
+        <span class="current-page">Page {{ current_page }} of {{ total_pages }}</span>
+        
+        {% if next_page %}
+        <a href="{{ next_page.url }}" class="next">Next →</a>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
