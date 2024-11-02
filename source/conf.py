@@ -64,17 +64,11 @@ post_date_format_short = '%B %d, %Y'
 # HTML output options
 html_theme = "pydata_sphinx_theme"
 html_logo = "_static/logo.svg"
-html_favicon = "_static/logo.svg"
+html_favicon = "_static/favicon.ico"
 html_title = "We Hold The Door Open to Canada for You!"
 
 html_theme_options = {
     "external_links": [
-        {"url": "https://www.canada.ca/en/immigration-refugees-citizenship.html", "name": "Official Website of IRCC"},
-        {"url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/account.html", "name": "Official Website of GCKey"},
-        {"url": "https://ircc-tracker-suivi.apps.cic.gc.ca/en/login", "name": "Official Website of Tracker"},
-        {"url": "https://atip-aiprp.apps.gc.ca/atip/privacyTerms.do?requestflow=ircc", "name": "Official Website of ATIP(IRCC)"},
-        {"url": "https://atip-aiprp.tbs-sct.gc.ca/", "name": "Official Website of ATIP(CBSA)"},
-        {"url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html", "name": "Official Website of Processing Time"},
     ],
     "icon_links": [
         {"name": "X", "url": "https://x.com/holdthedoor_ca", "icon": "fa-brands fa-x-twitter"},
