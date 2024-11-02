@@ -1,0 +1,56 @@
+{% extends "!page.html" %}
+
+{% block content %}
+<div class="news-container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ pathto('index') }}">Home</a></li>
+            <li class="breadcrumb-item"><a href="{{ pathto('news/index') }}">News</a></li>
+            {% if meta and meta.category %}
+            <li class="breadcrumb-item active">{{ meta.category }}</li>
+            {% endif %}
+        </ol>
+    </nav>
+
+    <div class="news-list">
+        {% for post in ablog.posts %}
+            <article class="news-item">
+                <h2 class="news-title">
+                    <a href="{{ pathto(post.docname) }}">{{ post.title }}</a>
+                </h2>
+                <div class="news-meta">
+                    <span class="date">{{ post.date.strftime('%Y-%m-%d') }}</span>
+                    {% if post.tags %}
+                    <span class="tags">
+                        Tags:
+                        {% for tag in post.tags %}
+                        <a href="{{ pathto('tag/' + tag.name) }}">#{{ tag }}</a>
+                        {% endfor %}
+                    </span>
+                    {% endif %}
+                </div>
+                <div class="news-excerpt">
+                    {{ post.excerpt }}
+                </div>
+                <a href="{{ pathto(post.docname) }}" class="read-more">Read more...</a>
+            </article>
+        {% endfor %}
+    </div>
+
+    {% if ablog.paginator %}
+    <nav class="pagination">
+        {% if ablog.paginator.has_prev %}
+            <a href="{{ pathto(ablog.paginator.prev_page_uri) }}" class="prev">Previous</a>
+        {% endif %}
+        
+        <span class="current">
+            Page {{ ablog.paginator.page_number }} of {{ ablog.paginator.num_pages }}
+        </span>
+        
+        {% if ablog.paginator.has_next %}
+            <a href="{{ pathto(ablog.paginator.next_page_uri) }}" class="next">Next</a>
+        {% endif %}
+    </nav>
+    {% endif %}
+</div>
+{% endblock %}

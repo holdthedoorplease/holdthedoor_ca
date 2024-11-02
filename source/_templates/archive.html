@@ -1,0 +1,42 @@
+{% extends "!page.html" %}
+
+{% block content %}
+<div class="archive-content">
+    {{ super() }}
+    
+    {% if ablog.archive %}
+        {% set archive = ablog.archive.archives[0] %}
+        {% set posts = archive.posts() %}
+        
+        {% for post in posts %}
+            <article class="post-entry">
+                <h2><a href="{{ pathto(post.docname) }}">{{ post.title }}</a></h2>
+                <div class="post-meta">
+                    {{ post.date.strftime(ablog.post_date_format) }}
+                </div>
+                {% if post.excerpt %}
+                    <div class="post-excerpt">
+                        {{ post.excerpt }}
+                    </div>
+                {% endif %}
+            </article>
+        {% endfor %}
+        
+        {% if archive.page_count > 1 %}
+            <nav class="pagination">
+                {% if archive.prev_page %}
+                    <a href="{{ pathto(archive.prev_page.docname) }}" class="prev">Previous</a>
+                {% endif %}
+                
+                <span class="page-info">
+                    Page {{ archive.cur_page.number }} of {{ archive.page_count }}
+                </span>
+                
+                {% if archive.next_page %}
+                    <a href="{{ pathto(archive.next_page.docname) }}" class="next">Next</a>
+                {% endif %}
+            </nav>
+        {% endif %}
+    {% endif %}
+</div>
+{% endblock %}
