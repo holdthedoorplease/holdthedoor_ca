@@ -19,7 +19,7 @@ myst:
 
 - header: "{fas}`key;pst-color-primary` GCKey"
   content: "Access secure online services with GCKey."
-  link: https://www.canada.ca/en/government/system/digital-government/digital-identity/gckey.html
+  link: https://www.canada.ca/en/immigration-refugees-citizenship/services/application/account.html
 
 - header: "{fas}`search;pst-color-primary` Visa Status Tracker"
   content: "Check the status of your immigration or citizenship application."
@@ -51,11 +51,11 @@ myst:
 
 - header: "{fas}`user-shield;pst-color-primary` CBSA ATIP Request"
   content: "Access your personal information held by the Canada Border Services Agency."
-  link: https://www.cbsa-asfc.gc.ca/agency-agence/reports-rapports/pia-efvp/atip-aiprp/req-dem-info-eng.html
+  link: https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/access-information-privacy/request-privacy-act.html
 
 - header: "{fas}`shield-alt;pst-color-primary` CSIS ATIP Request"
   content: "Request personal information from the Canadian Security Intelligence Service."
-  link: https://www.canada.ca/en/security-intelligence-service/corporate/access-information-privacy.html
+  link: https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/access-information-privacy/request-privacy-act.html
 ```
 
 ## Express Entry (EE)
@@ -67,15 +67,15 @@ myst:
 
 - header: "{fas}`user-check;pst-color-primary` Federal Skilled Worker Program"
   content: "Apply through the Federal Skilled Worker Program for fast-tracked immigration."
-  link: https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/works.html
+  link: https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/federal-skilled-workers.html
 
 - header: "{fas}`user-graduate;pst-color-primary` Canadian Experience Class"
   content: "For those with Canadian work experience seeking permanent residence."
-  link: https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/experience.html
+  link: https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/canadian-experience-class.html
 
 - header: "{fas}`tools;pst-color-primary` Federal Skilled Trades Program"
   content: "For skilled workers in specific trades seeking permanent residence."
-  link: https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/trades.html
+  link: https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/skilled-trades.html
 ```
 
 
@@ -89,7 +89,7 @@ myst:
 
 - header: "{fas}`map-marker-alt;pst-color-primary` British Columbia (BC PNP)"
   content: "Learn about the British Columbia Provincial Nominee Program."
-  link: https://www.welcomebc.ca/Immigrate-to-B-C
+  link: https://www.welcomebc.ca/immigrate-to-b-c/about-the-bc-provincial-nominee-program?
 
 - header: "{fas}`map-marker-alt;pst-color-primary` Ontario Immigrant Nominee Program (OINP)"
   content: "Explore the Ontario Immigrant Nominee Program."
@@ -97,23 +97,45 @@ myst:
 
 - header: "{fas}`map-marker-alt;pst-color-primary` Alberta Immigrant Nominee Program (AINP)"
   content: "Find out about the Alberta Immigrant Nominee Program."
-  link: https://www.alberta.ca/ainp.aspx
+  link: https://www.alberta.ca/alberta-advantage-immigration-program
 
 - header: "{fas}`map-marker-alt;pst-color-primary` Manitoba Provincial Nominee Program (MPNP)"
   content: "Discover the Manitoba Provincial Nominee Program."
-  link: https://www.immigratemanitoba.com
+  link: https://immigratemanitoba.com/immigrate/
 
 - header: "{fas}`map-marker-alt;pst-color-primary` Nova Scotia Nominee Program (NSNP)"
   content: "Check the Nova Scotia Nominee Program."
-  link: https://novascotiaimmigration.com
+  link: https://liveinnovascotia.com/
 
 - header: "{fas}`map-marker-alt;pst-color-primary` Saskatchewan Immigrant Nominee Program (SINP)"
   content: "Learn about the Saskatchewan Immigrant Nominee Program."
-  link: https://www.saskatchewan.ca/residents/moving-to-saskatchewan/immigrating-to-saskatchewan
+  link: https://www.saskatchewan.ca/residents/moving-to-saskatchewan/live-in-saskatchewan/by-immigrating/saskatchewan-immigrant-nominee-program?
 
-- header: "{fas}`map-marker-alt;pst-color-primary` Quebec Skilled Worker Program (QSWP)"
+- header: "{fas}`map-marker-alt;pst-color-primary` Newfoundland and Labrador Provincial Nominee Program (NLNP)"
+  content: "Explore the Newfoundland and Labrador Provincial Nominee Program."
+  link: https://www.gov.nl.ca/immigration/immigrating-to-newfoundland-and-labrador/provincial-nominee-program/overview/?
+
+- header: "{fas}`map-marker-alt;pst-color-primary` Prince Edward Island Provincial Nominee Program (PEI PNP)"
+  content: "Learn about the Prince Edward Island Provincial Nominee Program."
+  link: https://www.princeedwardisland.ca/en/topic/immigrate-to-pei-as-a-worker
+
+- header: "{fas}`map-marker-alt;pst-color-primary` New Brunswick Provincial Nominee Program (NB PNP)"
+  content: "Explore the New Brunswick Provincial Nominee Program."
+  link: https://www2.gnb.ca/content/gnb/en/corporate/promo/immigration/immigrating-to-nb/nb-immigration-program-streams.html?
+
+- header: "{fas}`map-marker-alt;pst-color-primary` Northwest Territories Nominee Program (NT PNP)"
+  content: "Learn about the Northwest Territories Nominee Program."
+  link: https://www.immigratenwt.ca/immigrate-here?
+
+
+- header: "{fas}`map-marker-alt;pst-color-primary` Yukon Nominee Program (YNP)"
+  content: "Learn about the Yukon Nominee Program."
+  link: https://yukon.ca/en/immigrate-yukon
+
+
+- header: "{fas}`map-marker-alt;pst-color-primary` Quebec’s immigration programs"
   content: "Explore immigration options through Quebec's program."
-  link: https://www.immigration-quebec.gouv.qc.ca/en/index.html
+  link: https://www.quebec.ca/en/immigration
 ```
 
 
@@ -138,7 +160,7 @@ Here are some **additional resources** that might be important for newcomers to 
 
 - header: "{fas}`money-bill-wave;pst-color-primary` Tax Information for Newcomers"
   content: "Understand your tax obligations and benefits as a new resident."
-  link: https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/newcomers-canada.html
+  link: https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/newcomers-canada-immigrants.html
 
 - header: "{fas}`balance-scale;pst-color-primary` Legal Rights and Responsibilities"
   content: "Learn about your legal rights and responsibilities in Canada."

@@ -15,15 +15,15 @@ Canada's Provincial Nominee Programs (PNPs) allow provinces and territories to n
 ```{toctree}
 :maxdepth: 2
 
-aaip/index
-bcpnp/index
-mpnp/index
-nbpnp/index
-nlpnp/index
-nsnp/index
-ntnp/index
-oinp/index
-peipnp/index
-sinp/index
-ynp/index
+ab/index
+bc/index
+mb/index
+nb/index
+nl/index
+ns/index
+nt/index
+on/index
+pe/index
+sk/index
+yt/index
 ```

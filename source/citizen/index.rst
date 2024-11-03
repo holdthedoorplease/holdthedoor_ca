@@ -12,6 +12,6 @@ Contents
 .. toctree::
    :maxdepth: 2
 
-   apply_for_citizenship
-   citizenship_test_and_interview
-   oath_of_citizenship_and_ceremony
+   eligibility
+   test
+   oath

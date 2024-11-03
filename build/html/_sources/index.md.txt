@@ -44,8 +44,8 @@ Canada🇨🇦 is famous for its friendliness, diversity, and freedom. If you'd 
   link: https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html
 ```
 
-```{attention}
-When applying for a visa, you could do it by yourself or hire a paid consultant. But please be aware that the consultant must be a Regulated Canadian Immigration Consultant (RCIC) or a lawyer. Otherwise, your application could be rejected. You can verify the authenticity of the consultant by checking the [Official Website of CICC](https://register.college-ic.ca/Public-Register-EN/RCIC_Search.aspx).
+```{warning}
+This website is for informational purposes only and does not constitute immigration consulting services or legal advice. We provide FREE information to help you understand the visa application process if you choose to handle your own immigration matters. In Canada, only authorized representatives can provide paid immigration advice or services. You can find licensed immigration consultants through the [Official Website of CICC](https://college-ic.ca/protecting-the-public/find-an-immigration-consultant).
 ```
 
 
@@ -56,13 +56,13 @@ Explore the various types of visitor visas to Canada and find the one that best 
 ```{gallery-grid}
 :grid-columns: 1 2 2 3
 
+- header: "{fas}`plane;pst-color-primary` Tourism in Canada"
+  content: "Plan your vacation with ease using our Tourist Visa resources."
+  link: visitor/tourism/index.html
+
 - header: "{fas}`book;pst-color-primary` Study in Canada"
   content: "Pursue your education in Canada with our Student Visa information."
   link: visitor/study/index.html
-
-- header: "{fas}`plane;pst-color-primary` Travel to Canada"
-  content: "Plan your vacation with ease using our Tourist Visa resources."
-  link: visitor/travel/index.html
 
 - header: "{fas}`users;pst-color-primary` Visit Family in Canada"
   content: "Learn about visas to visit your family members in Canada, including the Super Visa."
@@ -95,23 +95,23 @@ Learn about the different pathways to becoming a permanent resident of Canada.
 
 - header: "{fas}`users;pst-color-primary` Provincial Nominee Program"
   content: "Gain nomination from a Canadian province (PNP) to enhance your PR application."
-  link: https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees.html
+  link: immigration/pnp/index.html
 
 - header: "{fas}`users;pst-color-primary` Family Sponsorship"
   content: "Reunite with your family in Canada through our sponsorship programs."
-  link: https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/family-sponsorship.html
+  link: immigration/family/index.html
 
 - header: "{fas}`users;pst-color-primary` Quebec"
   content: "Reunite with your family in Canada through our sponsorship programs."
-  link: https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/family-sponsorship.html
+  link: immigration/quebec/index.html
 
 - header: "{fas}`users;pst-color-primary` Refugees"
   content: "Reunite with your family in Canada through our sponsorship programs."
-  link: https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/family-sponsorship.html
+  link: immigration/refugees/index.html
 
 - header: "{fas}`handshake;pst-color-primary` All PR Pathways"
   content: "Explore additional pathways to permanent residency tailored to your situation."
-  link: https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada.html
+  link: immigration/index.html
 ```
 
 ## Become Canadian: Change of Nationality
@@ -123,15 +123,15 @@ Understand the eligibility criteria and steps to become a Canadian citizen.
 
 - header: "{fas}`user-shield;pst-color-primary` Eligibility Criteria"
   content: "Learn about the requirements you must meet to apply for Canadian citizenship."
-  link: https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/become-canadian-citizen/eligibility.html
-
-- header: "{fas}`clipboard-list;pst-color-primary` Application Process"
-  content: "Follow our step-by-step guides to successfully apply for citizenship."
-  link: https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/become-canadian-citizen/application.html
+  link: citizen/eligibility.html
 
 - header: "{fas}`book-reader;pst-color-primary` Citizenship Test"
   content: "Prepare for the citizenship test with our study resources and tips."
-  link: https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/become-canadian-citizen/citizenship-test.html
+  link: citizen/test.html
+
+- header: "{fas}`clipboard-list;pst-color-primary` Oath of Citizenship"
+  content: "Learn about the Oath of Citizenship and the ceremony."
+  link: citizen/oath.html
 ```
 
 

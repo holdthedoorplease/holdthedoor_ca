@@ -12,13 +12,13 @@ Explore the various types of visitor visas to Canada and find the one that best 
 ```{gallery-grid}
 :grid-columns: 1 2 2 3
 
+- header: "{fas}`plane;pst-color-primary` Tourism in Canada"
+  content: "Plan your vacation with ease using our Tourist Visa resources."
+  link: tourism/index.html
+
 - header: "{fas}`book;pst-color-primary` Study in Canada"
   content: "Pursue your education in Canada with our Student Visa information."
   link: study/index.html
-
-- header: "{fas}`plane;pst-color-primary` Travel to Canada"
-  content: "Plan your vacation with ease using our Tourist Visa resources."
-  link: travel/index.html
 
 - header: "{fas}`users;pst-color-primary` Visit Family in Canada"
   content: "Learn about visas to visit your family members in Canada, including the Super Visa."
@@ -44,7 +44,7 @@ study/index
 :maxdepth: 2
 :caption: Travel to Canada
 
-travel/index
+tourism/index
 ```
 
 ```{toctree}

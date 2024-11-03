@@ -15,15 +15,15 @@ Express Entry is a fast-track immigration system used for skilled workers, profe
 
 - header: "{fas}`user-check;pst-color-primary` Federal Skilled Worker (EE)"
   content: "Apply through the Federal Skilled Worker program for fast-tracked immigration."
-  link: https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/works.html
+  link: ee/fsw.html
 
 - header: "{fas}`user-graduate;pst-color-primary` Canadian Experience Class (EE)"
   content: "Utilize the Canadian Experience Class for those with Canadian work experience."
-  link: https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/experience.html
+  link: ee/cec.html
 
 - header: "{fas}`clipboard-check;pst-color-primary` Federal Skilled Trades (EE)"
   content: "Apply through the Federal Skilled Trades Program for skilled workers in specific trades."
-  link: https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada.html
+  link: ee/fst.html
 ```
 
 ## Provincial Nominee Program
@@ -35,35 +35,43 @@ The Provincial Nominee Program (PNP) is a program that allows Canadian provinces
 
 - header: "{fas}`user-check;pst-color-primary` British Columbia (BC PNP)"
   content: "Learn about the British Columbia Provincial Nominee Program for skilled workers."
-  link: https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees/bc.html
+  link: pnp/bc/index.html
 
 - header: "{fas}`user-graduate;pst-color-primary` Ontario (OINP)"
   content: "Explore the Ontario Immigrant Nominee Program for skilled workers and international students."
-  link: https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees/ontario.html
+  link: pnp/on/index.html
 
 - header: "{fas}`users;pst-color-primary` Alberta (AINP)"
   content: "Learn about the Alberta Immigrant Nominee Program for skilled workers and international students."
-  link: https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees/alberta.html
-
-- header: "{fas}`users;pst-color-primary` Quebec (QSWP)"
-  content: "Learn about the Quebec Skilled Worker Program for skilled workers and international students."
-  link: https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees/quebec.html
+  link: pnp/ab/index.html
 
 - header: "{fas}`users;pst-color-primary` Nova Scotia (NS PNP)"
   content: "Learn about the Nova Scotia Provincial Nominee Program for skilled workers and international students."
-  link: https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees/novascotia.html
+  link: pnp/ns/index.html
 
 - header: "{fas}`users;pst-color-primary` Manitoba (MNP)"
   content: "Learn about the Manitoba Provincial Nominee Program for skilled workers and international students."
-  link: https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees/manitoba.html
+  link: pnp/mb/index.html
 
 - header: "{fas}`users;pst-color-primary` New Brunswick (NB PNP)"
   content: "Learn about the New Brunswick Provincial Nominee Program for skilled workers and international students."
-  link: https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees/newbrunswick.html
+  link: pnp/nb/index.html
 
 - header: "{fas}`users;pst-color-primary` Newfoundland and Labrador (NL PNP)"
   content: "Learn about the Newfoundland and Labrador Provincial Nominee Program for skilled workers and international students."
-  link: https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees/newfoundlandlabrador.html
+  link: pnp/nl/index.html
+
+- header: "{fas}`users;pst-color-primary` Prince Edward Island (PEI PNP)"
+  content: "Learn about the Prince Edward Island Provincial Nominee Program for skilled workers and international students."
+  link: pnp/pe/index.html
+
+- header: "{fas}`users;pst-color-primary` Saskatchewan (SK PNP)"
+  content: "Learn about the Saskatchewan Provincial Nominee Program for skilled workers and international students."
+  link: pnp/sk/index.html
+
+- header: "{fas}`users;pst-color-primary` Yukon (YNP)"
+  content: "Learn about the Yukon Provincial Nominee Program for skilled workers and international students."
+  link: pnp/yt/index.html
 ```
 
 
