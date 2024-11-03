@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /sources/
+Allow: /
+Sitemap: https://holdthedoor.ca/sitemap.xml

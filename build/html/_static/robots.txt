@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /sources/
+Disallow: /news/
+Allow: /
+Sitemap: https://holdthedoor.ca/sitemap.xml

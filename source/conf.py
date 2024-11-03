@@ -15,6 +15,9 @@ release = '1.0.0'
 sys.path.insert(0, os.path.abspath('_extension'))
 sys.path.insert(0, os.path.abspath('scripts'))
 
+html_baseurl = 'https://holdthedoor.ca/'
+html_extra_path = ['_static/robots.txt']
+
 # General configuration
 extensions = [
     'myst_parser',
@@ -29,6 +32,7 @@ extensions = [
     'sphinxcontrib.youtube',
     'sphinx.ext.autosectionlabel',
     'split_articles',
+    'sphinx_sitemap'
 ]
 
 autosectionlabel_prefix_document = True
