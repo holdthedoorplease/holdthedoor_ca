@@ -79,15 +79,20 @@ html_theme_options = {
     },
     "show_toc_level": 1,
     "navbar_align": "left",
-    "show_version_warning_banner": True,
+    "show_version_warning_banner": False,
     "footer_start": "",
     "footer_end": ["copyright"],
+    "secondary_sidebar_items": ["page-toc", "aboutus"   ],
+
 }
 
 # Sidebar configuration
 html_sidebars = {
-    "immigration/index": ["sidebar-nav-bs", "custom-template"]
+    "**": ["sidebar-nav-bs", "custom-template", "sidebar-ethical-ads"],
+    "index": [],
+    "visitor/index": [],
 }
+
 
 html_context = {
     "doc_path": "docs",

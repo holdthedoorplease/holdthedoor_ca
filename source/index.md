@@ -44,7 +44,7 @@ Canada🇨🇦 is famous for its friendliness, diversity, and freedom. If you'd 
   link: https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html
 ```
 
-```{note}
+```{attention}
 When applying for a visa, you could do it by yourself or hire a paid consultant. But please be aware that the consultant must be a Regulated Canadian Immigration Consultant (RCIC) or a lawyer. Otherwise, your application could be rejected. You can verify the authenticity of the consultant by checking the [Official Website of CICC](https://register.college-ic.ca/Public-Register-EN/RCIC_Search.aspx).
 ```
 
