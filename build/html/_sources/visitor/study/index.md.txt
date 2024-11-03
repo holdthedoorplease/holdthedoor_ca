@@ -11,33 +11,6 @@ Welcome to the comprehensive guide for international students planning to study 
 
 This guide covers everything you need to know about obtaining and maintaining your status as an international student in Canada.
 
-```{gallery-grid}
-:grid-columns: 1 2 2 3
-
-- header: "{fas}`plane;pst-color-primary` Tourist Visa"
-  content: "Plan your vacation with ease using our Tourist Visa resources."
-  link: https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada.html
-
-- header: "{fas}`book;pst-color-primary` Student Visa"
-  content: "Pursue your education in Canada with our Student Visa information."
-  link: https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada.html
-
-- header: "{fas}`briefcase;pst-color-primary` Work Visa"
-  content: "Find opportunities to work in Canada through our Work Visa guides."
-  link: https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada.html
-
-- header: "{fas}`question-circle;pst-color-primary` Other Visas"
-  content: "Discover other visa options available for your specific needs."
-  link: https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada.html
-
-- header: "{fas}`map-marked-alt;pst-color-primary` Travel Itinerary"
-  content: "Create a seamless travel plan with our itinerary resources."
-  link: https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada.html
-
-- header: "{fas}`info-circle;pst-color-primary` Visa Requirements"
-  content: "Understand the requirements for obtaining a Canadian visa."
-  link: https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/requirements.html
-```
 
 ```{toctree}
 :maxdepth: 2

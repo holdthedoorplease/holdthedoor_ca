@@ -16,7 +16,7 @@ sys.path.insert(0, os.path.abspath('_extension'))
 sys.path.insert(0, os.path.abspath('scripts'))
 
 html_baseurl = 'https://holdthedoor.ca/'
-html_extra_path = ['_static/robots.txt']
+html_extra_path = ['robots.txt']
 
 # General configuration
 extensions = [
@@ -95,6 +95,10 @@ html_sidebars = {
     "**": ["sidebar-nav-bs", "custom-template", "sidebar-ethical-ads"],
     "index": [],
     "visitor/index": [],
+    "immigration/index": [],
+    "citizen/index": [],
+    "news/index": [],
+    "officialwebsites/index": [],
 }
 
 
