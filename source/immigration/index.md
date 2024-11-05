@@ -112,5 +112,11 @@ quebec/index
 refugees/index
 ```
 
+```{toctree}
+:maxdepth: 2
+:caption: Immigration from the USA
+
+us/index
+```
 
 

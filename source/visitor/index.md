@@ -67,3 +67,10 @@ work/index
 
 business/index
 ```
+
+```{toctree}
+:maxdepth: 2
+:caption: Visiting from the USA
+
+us/index
+```

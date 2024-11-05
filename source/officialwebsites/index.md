@@ -133,7 +133,7 @@ myst:
   link: https://yukon.ca/en/immigrate-yukon
 
 
-- header: "{fas}`map-marker-alt;pst-color-primary` Quebec’s immigration programs"
+- header: "{fas}`map-marker-alt;pst-color-primary` Quebec's immigration programs"
   content: "Explore immigration options through Quebec's program."
   link: https://www.quebec.ca/en/immigration
 ```

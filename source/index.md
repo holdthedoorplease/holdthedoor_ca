@@ -6,7 +6,7 @@ myst:
 html_theme.sidebar_secondary.remove: true
 ---
 
-# Americans, Unhappy with the Election Results? We <span style="color:red;">HoldTheDoor</span> open to <span style="color:red;">Canada</span> 🇨🇦 for You!
+# Americans, unhappy with the election results? We <span style="color:red;">HoldTheDoor</span> Open to <span style="color:red;">Canada</span> 🇨🇦 for You!
 
 ```{youtube} HFasfNBpD7U
 :width: 100%
@@ -14,7 +14,7 @@ html_theme.sidebar_secondary.remove: true
 :align: center
 ```
 
-Canada is famous for its friendliness, diversity, and breathtaking landscapes. It’s a tradition here to <span style="color:red;">HoldTheDoor</span> open for those who follow. If you’re considering traveling, studying, working, visiting family, or immigrating here, we’re here to help.
+Canada is famous for its friendliness, diversity, and breathtaking landscapes. It's a tradition here to <span style="color:red;">HoldTheDoor</span> open for those who follow. If you're considering traveling, studying, working, visiting family, or immigrating here, we're here to help.
 
 ```{gallery-grid}
 :grid-columns: 1 2 2 3
@@ -45,12 +45,12 @@ Canada is famous for its friendliness, diversity, and breathtaking landscapes. I
 ```
 
 ```{important}
-[HoldTheDoor.ca](https://holdthedoor.ca) is for informational purposes only and does not constitute immigration consulting services or legal advice. We provide information to help you understand the visa application process if you choose to handle your own immigration matters. In Canada, only authorized representatives can provide paid immigration advice or services. You can find licensed immigration consultants through the [Official Website of CICC](https://college-ic.ca/protecting-the-public/find-an-immigration-consultant).
+[HoldTheDoor.ca](https://holdthedoor.ca), a Canadian immigration resource platform, is for informational purposes only and does not offer immigration consulting services or legal advice. We provide information to help you understand the visa application process. In Canada, only authorized representatives can provide paid immigration advice or services. You can find licensed immigration consultants through the [Official Website of CICC](https://college-ic.ca/protecting-the-public/find-an-immigration-consultant).
 ```
 
 ## Visit Canada: Temporary Resident Visa
 
-Most foreigners need a visitor visa to enter Canada, whether you’re coming to travel, study, work, or visit family. Usually, visitors are allowed to stay up to 6 months unless you’re entering to study or work. If you wish to stay longer, leave and re-enter, or apply for an extension, additional steps are required.
+Most foreigners need a visitor visa to enter Canada, whether you're coming to travel, study, work, or visit family. Usually, visitors are allowed to stay up to 6 months unless you're entering to study or work. If you wish to stay longer, leave and re-enter, or apply for an extension, additional steps are required.
 
 
 ```{gallery-grid}
@@ -84,18 +84,18 @@ Most foreigners need a visitor visa to enter Canada, whether you’re coming to 
 
 ```{admonition} To U.S. Citizens/PR
 :class: note
-Congratulations! If you hold a valid U.S. passport or Green Card, you don’t need to apply for a Canadian visa beforehand. You can legally stay in Canada for up to 6 months to travel, look for work, or participate in short-term study programs unless you are inadmissible for medical reasons or criminal records. However, please note that you cannot engage in work or long-term studies unless you obtain the appropriate visa. Read more.
+Congratulations! If you hold a valid U.S. passport or Green Card, you don't need to apply for a Canadian visa beforehand. You can legally stay in Canada for up to 6 months to travel, look for work, or participate in short-term study programs unless you are inadmissible for medical reasons or criminal records. However, please note that you cannot engage in work or long-term studies unless you obtain the appropriate visa. [Read more](visitor/us/index)
 ```
 
 ## Immigration to Canada: Permanent Resident Visa
 
-Canada welcomes immigrants under several main categories: Economic Class, Family Sponsorship, Refugees, and other reasons such as Humanitarian & Compassionate. Each category reflects Canada’s commitment to diversity and inclusivity.
+Canada welcomes immigrants under several main categories: Economic Class, Family Sponsorship, Refugees, and other reasons such as Humanitarian & Compassionate. Each category reflects Canada's commitment to diversity and inclusivity.
 
 ```{gallery-grid}
 :grid-columns: 1 2 2 3
 
 - header: "{fas}`user-check;pst-color-primary` Express Entry"
-  content: "Apply through the Federal Skilled Worker program for fast-tracked immigration."
+  content: "Apply for fast-tracked immigration through the Express Entry system."
   link: immigration/ee/index.html
 
 - header: "{fas}`users;pst-color-primary` Provincial Nominee Program"
@@ -107,21 +107,21 @@ Canada welcomes immigrants under several main categories: Economic Class, Family
   link: immigration/family/index.html
 
 - header: "{fas}`users;pst-color-primary` Quebec"
-  content: "Reunite with your family in Canada through our sponsorship programs."
+  content: "Apply for Quebec-specific immigration programs."
   link: immigration/quebec/index.html
 
 - header: "{fas}`users;pst-color-primary` Refugees"
-  content: "Reunite with your family in Canada through our sponsorship programs."
+  content: "Apply for refugee status in Canada."
   link: immigration/refugees/index.html
 
 - header: "{fas}`handshake;pst-color-primary` All PR Pathways"
-  content: "Explore additional pathways to permanent residency tailored to your situation."
+  content: "Explore all pathways to permanent residency tailored to your situation."
   link: immigration/index.html
 ```
 
 ```{admonition} To U.S. Citizens/PR
 :class: note
-Sorry, being a U.S. citizen or PR doesn’t automatically qualify you for Canadian PR—you’ll need to apply for it. If you’ve never worked in Canada, consider the Federal Skilled Worker Program (FSW). And if you’re good at French, that’s a real plus! Yes, French is also an official language in Canada. On the other hand, the Family Sponsorship is more straightforward: if you’re married to or have been cohabiting with a Canadian/PR for more than a year, you might eligible for PR. There is also a common form of immigration known as a refugee claim. Unfortunately, being dissatisfied with election results of the U.S. does not count. Read More
+Sorry, being a U.S. citizen or PR doesn't automatically qualify you for Canadian PR—you'll need to apply for it. If you've never worked in Canada, consider the Federal Skilled Worker Program (FSW). And if you're good at French, that's a real plus! Yes, French is also an official language in Canada. On the other hand, the Family Sponsorship is more straightforward: if you're married to or have been cohabiting with a Canadian/PR for more than a year, you might eligible for PR. There is also a common form of immigration known as a refugee claim. Unfortunately, being dissatisfied with election results of the U.S. does not count. [Read more](immigration/us/index)
 ```
 
 ## Become Canadian: Change of Nationality
@@ -132,7 +132,7 @@ To become a Canadian citizen, you must have permanent resident status and have l
 :grid-columns: 1 2 2 3
 
 - header: "{fas}`user-shield;pst-color-primary` Eligibility Criteria"
-  content: "Learn about the requirements you must meet to apply for Canadian citizenship."
+  content: "Learn about the requirements to apply for Canadian citizenship."
   link: citizen/eligibility.html
 
 - header: "{fas}`book-reader;pst-color-primary` Citizenship Test"
@@ -146,7 +146,7 @@ To become a Canadian citizen, you must have permanent resident status and have l
 
 ```{admonition} To U.S. Citizens/PR
 :class: note
-Nope, having an American passport doesn’t give you any shortcuts to Canadian citizenship. You’ve got to earn it like everyone else.
+Nope, having an American passport doesn't give you any shortcuts to Canadian citizenship. You've got to earn it like everyone else.
 ```
 
 ```{toctree}

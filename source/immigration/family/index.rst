@@ -19,7 +19,7 @@ Family Class Immigration allows Canadian citizens and permanent residents to spo
   Full details on eligible family members are available on the [IRCC page](https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/family-sponsorship/other-relatives/who-you-can-sponsor.html).
 
 - **Application Process:** The application process involves two main steps:
-  1. **Sponsor’s Application:** The sponsor applies to sponsor a family member.
+  1. **Sponsor's Application:** The sponsor applies to sponsor a family member.
   2. **Permanent Residence Application:** The sponsored family member applies for permanent residence.
   
   Both applications are submitted simultaneously. For detailed instructions, visit the [application process guide](https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/family-sponsorship/other-relatives/apply.html).
