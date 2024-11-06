@@ -76,6 +76,7 @@ html_theme_options = {
     ],
     "icon_links": [
         {"name": "X", "url": "https://x.com/holdthedoor_ca", "icon": "fa-brands fa-x-twitter"},
+        {"name": "Email", "url": "mailto:holdthedoor.ca@gmail.com", "icon": "fa-solid fa-envelope"},
     ],
     "logo": {
         "text": "HoldTheDoor.ca",

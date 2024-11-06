@@ -8,7 +8,7 @@ html_theme.sidebar_secondary.remove: true
 
 # Americans, unhappy with the election results? We <span style="color:red;">HoldTheDoor</span> Open to <span style="color:red;">Canada</span> 🇨🇦 for You!
 
-```{youtube} HFasfNBpD7U
+```{youtube} ilKlSd-oOfE
 :width: 100%
 :height: 400px
 :align: center
@@ -31,17 +31,17 @@ Canada is famous for its friendliness, diversity, and breathtaking landscapes. I
   content: "Verify the authenticity of Regulated Canadian Immigration Consultants (RCIC)."
   link: https://register.college-ic.ca/Public-Register-EN/RCIC_Search.aspx
 
-- header: "{fas}`key;pst-color-primary` GCKey"
-  content: "Securely access Canadian government services online with GCKey."
-  link: https://www.canada.ca/en/immigration-refugees-citizenship/services/application/account.html
-
 - header: "{fas}`spinner;pst-color-primary` Visa Status Tracker"
   content: "Monitor the status of your visa application in real-time."
   link: https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-status.html
 
 - header: "{fas}`clock;pst-color-primary` Visa Processing Time"
-  content: "Check current processing times for different types of Canadian visas."
+  content: "Check processing times for different types of Canadian visas."
   link: https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html
+
+- header: "{fas}`link;pst-color-primary` All Related Official Websites"
+  content: "Access all official websites of Canadian immigration services."
+  link: officialwebsites/index.html
 ```
 
 ```{important}
