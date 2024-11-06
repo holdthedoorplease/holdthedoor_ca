@@ -1,7 +1,8 @@
 ---
 myst:
   html_meta:
-    "description lang=en": "Immigration to Canada"
+    "description lang=en": "Immigration to Canada – Pathways, requirements, and resources for those considering a new life in Canada."
+    "description": "Official Canadian visa and immigration websites for information on visas, residency, and citizenship."
 ---
 
 # Immigration to Canada

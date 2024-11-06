@@ -1,7 +1,7 @@
 ---
 myst:
   html_meta:
-    description: "Official Websites for Canadian Visa and Immigration Information"
+    description: "Find official Canadian websites for visa applications, immigration services, and trusted information on pathways to work, study, and live in Canada."
 ---
 
 # Official Websites

@@ -1,8 +1,9 @@
 ---
 myst:
   html_meta:
-    "description lang=en": |
-      Canada is famous for its friendliness, diversity, and freedom. If you'd like to travel/study/work, or immigrate here, we'd like to hold the door for you. Here are the most often used official websites for visa applications.
+    "og:title": "HoldTheDoor.ca – Your Guide to Moving to Canada"
+    "og:description": "Explore visa options and paths to Canadian citizenship. HoldTheDoor.ca has the resources to help you make the move!"
+    "og:url": "https://holdthedoor.ca"
 html_theme.sidebar_secondary.remove: true
 ---
 

@@ -1,6 +1,7 @@
 ---
 myst:
   html_meta:
+    "title": "Visitor Visas to Canada – Travel, Study, Work Options | HoldTheDoor.ca"
     "description lang=en": |
       Explore the various types of visitor visas to Canada and find the one that best suits your needs.
 ---
