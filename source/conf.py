@@ -110,7 +110,7 @@ html_context = {
 
 # Custom styles and scripts
 html_css_files = ["custom.css"]
-html_js_files = ["pydata-icon.js", "custom-icon.js"]
+html_js_files = ["pydata-icon.js", "custom-icon.js", "google_analytics.js"]
 todo_include_todos = True
 
 # Favicon configuration
