@@ -6,15 +6,6 @@ myst:
     "og:url": "https://holdthedoor.ca"
 html_theme.sidebar_secondary.remove: true
 ---
-
-# Americans, unhappy with the election results? We <span style="color:red;">HoldTheDoor</span> Open to <span style="color:red;">Canada</span> 🇨🇦 for You!
-
-```{youtube} ilKlSd-oOfE
-:width: 100%
-:height: 400px
-:align: center
-```
-
 Canada is famous for its friendliness, diversity, and breathtaking landscapes. It's a tradition here to <span style="color:red;">HoldTheDoor</span> open for those who follow. If you're considering traveling, studying, working, visiting family, or immigrating here, we're here to help.
 
 ```{gallery-grid}
